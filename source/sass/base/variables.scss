@@ -1,0 +1,42 @@
+// FONTS
+
+$font-base: "Manrope", arial, sans-serif;
+$font-title: "Loos", arial, sans-serif;
+$font-title-w: "Loos Wide", arial, sans-serif;
+$font-other: "Inter", arial, sans-serif;
+
+
+// COLORS
+$color-black: #000000;
+
+$color-white: #ffffff;
+$color-white-20: rgba(255, 255, 255, 0.2);
+$color-white-50: rgba(255, 255, 255, 0.5);
+
+
+$color-text: #0D1627;
+$color-text-40: rgba(13, 22, 39, 0.4);
+$color-text-70: rgba(13, 22, 39, 0.7);
+
+$color-btn: #1859FF;
+$color-bg-light: #eef4f9;
+$color-bg-card: #0039CC;
+$color-bg-footer: #0D1627;
+$color-bg-other: #D1DEFF;
+
+$color-tag: rgba(0, 39, 178, 0.06);
+
+$color-accent: #D9F243;
+
+$color-overlay: rgba(49, 109, 194, 0.2); // 20%
+$color-overlay-bg: rgba(13, 29, 51, 0.4);
+
+$color-line: rgba(13, 22, 39, 0.1);
+
+$color-disabled: #a9afb7;
+$color-error: #ff5e66;
+$color-active: #275699; // ?????????
+
+// WIDTH
+$desktop-width: 1440px;
+$mobile-width: 480px;

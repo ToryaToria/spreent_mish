@@ -1,0 +1,36 @@
+.header {
+  padding-top: 17px;
+  padding-bottom: 17px;
+border-bottom: 1px solid red;
+}
+
+.header__container {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  width: 127px;
+  height: 28px;
+  margin-right: auto;
+}
+
+.header__button {
+  margin-right: 20px;
+}
+
+.header__btn-menu {
+  border-left: 3px solid red;
+
+  // @include media-desktop {
+  //   display: none;
+  // }
+}
+
+.header__nav {
+  @include media-desktop {
+    margin-right: 100px;
+  }
+}

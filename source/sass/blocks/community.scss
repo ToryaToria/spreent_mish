@@ -1,0 +1,86 @@
+.community {
+  padding-top: 60px;
+  padding-bottom: 117px;
+
+  @include media-desktop {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.community__container {
+  border-top: 1px solid red;
+}
+
+.community__students {
+  @include list-reset;
+  display: flex;
+  align-items: flex-start;
+  gap: -10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @include media-desktop {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+.community__wrapper-img {
+  box-sizing: border-box;
+  border-radius: 144px;
+  // padding: 5px;
+  overflow: hidden;
+  background-color: aqua;
+  border: 4px solid greenyellow;
+
+  width: 90px;
+  height: 90px;
+
+  @include media-desktop {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.community__img {
+  display: block;
+  width: 90px;
+  height: 90px;
+
+  @include media-desktop {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.community__wrapper-still {
+  box-sizing: border-box;
+  border-radius: 144px;
+  width: 90px;
+  height: 90px;
+  // padding: 5px;
+  overflow: hidden;
+  background-color: aqua;
+  border: 4px solid $color-btn;
+
+  @include media-desktop {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.community__benefits {
+  @include list-reset;
+  display: grid;
+  gap: 30px;
+
+  @include media-desktop {
+    grid-template-columns: 2fr 1fr;
+    // grid-auto-flow: row;
+    grid-template-areas:
+      "big none"
+      "big none";
+    gap: 40px;
+  }
+}

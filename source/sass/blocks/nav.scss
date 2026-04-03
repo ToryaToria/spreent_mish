@@ -1,0 +1,16 @@
+.nav {
+  display: none;
+
+  @include media-desktop {
+    display: block;
+  }
+}
+
+.nav__list {
+  @include list-reset;
+
+  @include media-desktop {
+  display: flex;
+  gap: 20px;
+  }
+}

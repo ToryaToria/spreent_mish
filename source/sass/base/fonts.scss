@@ -1,0 +1,55 @@
+/* ===================== шрифты. подключение =============== */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../../fonts/man/Manrope-Medium.woff2") format("woff2"),
+    url("../../fonts/man/Manrope-Medium.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("../../fonts/man/Manrope-SemiBold.woff2") format("woff2"),
+    url("../../fonts/man/Manrope-SemiBold.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Loos";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../../fonts/loos/Loos-NormalMedium.woff2") format("woff2"),
+    url("../../fonts/loos/Loos-NormalMedium.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Loos Wide";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../../fonts/loos/Loos-WideMedium.woff2") format("woff2"),
+    url("../../fonts/loos/Loos-WideMedium.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../../fonts/inter/inter_cyrillic-regular.woff2") format("woff2"),
+    url("../../fonts/inter/inter_cyrillic-regular.woff") format("woff");
+
+  font-display: swap;
+}

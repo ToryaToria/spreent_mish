@@ -1,0 +1,89 @@
+.hero {
+  padding-top: 40px;
+  padding-bottom: 61px;
+
+  @include media-desktop {
+    padding-top: 34px;
+    padding-bottom: 98px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
+  @include media-desktop {
+    margin-top: 193px;
+    margin-bottom: 35px;
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 25px;
+
+  @include media-desktop {
+    margin-bottom: 35px;
+  }
+}
+
+.hero__wrapper-content {
+  margin-bottom: 29px;
+  margin-bottom: 40px;
+}
+
+.hero__wrapper-artur {
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+}
+
+.hero__name {
+  padding: 2px 8px;
+  background-color: $color-btn;
+  margin-left: 26px;
+}
+
+.hero__wrapper-name {
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/sprite/hand.svg");
+  }
+}
+
+.hero__img {
+  display: block;
+  border-radius: 16px;
+
+  width: 221px;
+  height: 135px;
+
+   @include media-desktop {
+    width: 329px;
+    height: 200px;
+  }
+
+   &--sergey {
+    margin-left: 41px;
+    width: 117px;
+    height: 171px;
+
+    @include media-desktop {
+      width: 175px;
+      height: 256px;
+    }
+  }
+}
+
+.hero__wrapper-others {
+  display: flex;
+  gap: 19px;
+  justify-content: space-between;
+}
+
+.hero__wrapper-sergey,
+.hero__wrapper-misha {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,29 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+
+// Base ---------------------------------
+
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/fonts";
+@import "./base/fonts-styles";
+@import "./base/page";
+@import "./base/visually-hidden";
+@import "./base/container";
+
+// Blocks ---------------------------------
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/button.scss";
+@import "./blocks/btn-menu.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/about.scss";
+@import "./blocks/community.scss";
+@import "./blocks/benefit.scss";
+@import "./blocks/price.scss";
+@import "./blocks/work.scss";
+@import "./blocks/certificate.scss";
+@import "./blocks/form.scss";
+@import "./blocks/footer.scss";

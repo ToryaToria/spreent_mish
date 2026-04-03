@@ -1,0 +1,30 @@
+
+.benefit--big {
+   @include media-desktop {
+      grid-area: big;
+    }
+  }
+
+.benefit__title {
+  @include font($family: $font-title-w, $size: 90px, $line-height: 100%);
+  margin-bottom: 5px;
+  letter-spacing: -0.06em;
+
+  @include media-desktop {
+    margin-bottom: 15px;
+  }
+
+  &--big {
+    @include media-desktop {
+      font-size: 120px;
+    }
+  }
+}
+
+.benefit__text {
+  @include font($size: 18px, $line-height: 140%, $color: $color-text-70);
+
+  @include media-desktop {
+    font-size: 24px;
+  }
+}
