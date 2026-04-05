@@ -1,7 +1,7 @@
 .title-hero {
   @include font($family: $font-title-w, $size: 40px, $line-height: 98%);
 
-  letter-spacing: -0.012;
+  letter-spacing: -0.6px;
 
   @include media-desktop {
     font-size: 90px;

@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 204px;
   padding-bottom: 340px;
-  background-color: azure;
 
   @include media-desktop {
     padding-top: 189px;
@@ -61,8 +60,6 @@
   display: flex;
   align-items: start;
   gap: 41px;
-
-  background-color: beige;
 
   @include media-desktop {
     justify-content: start;
@@ -155,8 +152,6 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-
-  background-color: rgb(220, 220, 173);
 }
 
 .hero__wrapper-sergey {

@@ -5,7 +5,9 @@
   margin-top: -150px;
 
   @include media-desktop {
-    margin-top: -150px;
+      padding-top: 340px;
+
+    margin-top: -250px;
   }
 }
 

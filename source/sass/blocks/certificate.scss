@@ -7,6 +7,8 @@
   padding-right: 15px;
 
   @include media-desktop {
+      position: relative;
+
     padding: 30px;
     margin-left: 40px;
     margin-right: 40px;
@@ -30,7 +32,7 @@
   @include media-desktop {
     font-size: 46px;
     line-height: 100%;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
 
   }
 }
