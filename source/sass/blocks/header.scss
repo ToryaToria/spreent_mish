@@ -1,13 +1,24 @@
 .header {
-  padding-top: 17px;
-  padding-bottom: 17px;
-border-bottom: 1px solid red;
+  position: relative;
+  z-index: 30;
+  background-color: $color-white;
+  border-bottom: 1px solid red;
+
+  @include media-desktop {
+    padding-top: 17px;
+    padding-bottom: 14px;
+  }
 }
 
 .header__container {
   display: flex;
   // justify-content: center;
   align-items: center;
+  padding-right: 0;
+
+  @include media-desktop {
+    padding-right: 40px;
+  }
 }
 
 .header__logo {
@@ -19,18 +30,33 @@ border-bottom: 1px solid red;
 
 .header__button {
   margin-right: 20px;
-}
-
-.header__btn-menu {
-  border-left: 3px solid red;
-
-  // @include media-desktop {
-  //   display: none;
-  // }
+  @include media-desktop {
+    margin-right: 0;
+  }
 }
 
 .header__nav {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  left: -550px;
+  padding: 15px 30px 15px 36px;
+  background-color: $color-white;
+  // background-color: rgb(200, 223, 223);
+
+  // z-index: 20;
+
+  transition: all 0.3s;
+
   @include media-desktop {
     margin-right: 100px;
+    background-color: inherit;
+    position: static;
+    width: fit-content;
+    padding: 0;
   }
+}
+
+.header__nav--open {
+  left: 0;
 }

@@ -16,8 +16,8 @@
 
 .certificate__container {
   @include media-desktop {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
     background-color: $color-bg-light;
     border-radius: 32px;
@@ -26,6 +26,13 @@ justify-content: space-between;
 
 .certificate__title {
   margin-bottom: 20px;
+
+  @include media-desktop {
+    font-size: 46px;
+    line-height: 100%;
+      letter-spacing: 0.05em;
+
+  }
 }
 
 .certificate__text {
@@ -40,15 +47,16 @@ justify-content: space-between;
   overflow: hidden;
 
   @include media-desktop {
-       width: 660px;
-  height: 440px;
-      }
+    width: 660px;
+    height: 440px;
+  }
 }
 
 .certificate__content {
-    @include media-desktop {
-    width: 487px;
-    }
+  margin-bottom: 55px;
+  @include media-desktop {
+    width: 500px;
+  }
 }
 
 .certificate__img {
@@ -56,8 +64,8 @@ justify-content: space-between;
   width: 448px;
   height: 300px;
 
-      @include media-desktop {
-       width: 660px;
-  height: 440px;
-      }
+  @include media-desktop {
+    width: 660px;
+    height: 440px;
+  }
 }

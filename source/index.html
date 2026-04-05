@@ -20,7 +20,7 @@
   <link rel="preload" href="./fonts/Manrope-Light.woff2" type="font/woff2" as="font"> -->
 </head>
 
-<body class="page__body text-base">
+<body class="page__body text-base-">
   <header class="header">
     <div class="header__container container">
       <img class="header__logo" src="./img/logo.svg" alt="logo" width="127" height="28">
@@ -48,7 +48,6 @@
 
       <button class="header__btn-menu btn-menu" type="button">
         <span class="visually-hidden">Меню</span>
-        <span class="btn-menu__decor"></span>
       </button>
     </div>
   </header>
@@ -65,27 +64,30 @@
         </div>
 
         <div class="hero__wrapper-content">
-          <h2 class="hero__title title-hero">— Опыт, практика,<br>актуальные знания</h2>
-          <p class="hero__subtitle text-base text-base--big">
-            Главные ценности, вокруг которых строится обучение в spreent
-          </p>
+          <div>
+            <h2 class="hero__title title-hero">Опыт, практика,<span class="hero__indent">актуальные знания</span></h2>
+            <p class="hero__subtitle text-base text-base--big">
+              Главные ценности, вокруг которых<br>
+              строится обучение в spreent
+            </p>
 
-          <button class="header__button button text-button" type="button">
-            Начать учиться
-          </button>
+            <button class="hero__button button text-button" type="button">
+              Начать учиться
+            </button>
+          </div>
         </div>
 
         <div class="hero__wrapper-others">
           <div class="hero__wrapper-sergey">
             <img class="hero__img hero__img--sergey" src="../../img/name/sergey.jpg" alt="Сергей" width="117"
               height="171">
-            <div class="hero__wrapper-name">
+            <div class="hero__wrapper-name hero__wrapper-name--sergey">
               <p class="hero__name text-name">Сергей</p>
             </div>
           </div>
 
           <div class="hero__wrapper-misha">
-            <div class="hero__wrapper-name">
+            <div class="hero__wrapper-name hero__wrapper-name--misha">
               <p class="hero__name text-name">Миша</p>
             </div>
             <img class="hero__img" src="../../img/name/misha.jpg" alt="Миша" width="221" height="135">
@@ -103,34 +105,38 @@
         <ul class="about__list">
           <li class="about_item about_item--card1">
             <div class="about__wrapper">
-              <p class="about_tag text-tag text-reverse ">Что я получу?</p>
-              <h3 class="about_card title-card text-reverse ">Практические навыки</h3>
-              <p class="title-text text-base text-reverse ">
+              <p class="about__tag text-tag text-reverse ">Что я получу?</p>
+              <h3 class="about__card title-card text-reverse ">Практические навыки</h3>
+              <p class="about__text text-base text-reverse ">
                 Даем конкретные знания по профессии. Тренируемся на реальных
                 проектахи делаем свой продукт
               </p>
             </div>
 
-            <img class="about__img" src="./img/card/card1.svg" alt="круг и квадрат" width="357" height="482">
+            <!-- <div class="about__wrapper-img"> -->
+              <img class="about__img" src="./img/card/card1.svg" alt="круг и квадрат" width="357" height="482">
+            <!-- </div> -->
           </li>
 
           <li class="about_item about_item--card2">
             <div class="about__wrapper">
-              <p class="about_tag about_tag--2 text-tag">Кто будет учить?</p>
-              <h3 class="about_card title-card">Опытные преподаватели</h3>
-              <p class="title-text text-base">
+              <p class="about__tag about__tag--2 text-tag">Кто будет учить?</p>
+              <h3 class="about__card title-card">Опытные преподаватели</h3>
+              <p class="about__text text-base">
                 В школе преподают эксперты-практики, которые прямо сейчас работают в крупных компаниях индустрии
               </p>
             </div>
 
-            <img class="about__img" src="./img/card/card2.png" alt="препод" width="365" height="413">
+            <!-- <div class="about__wrapper-img"> -->
+              <img class="about__img about__img--card2" src="./img/card/card2.png" alt="препод" width="365" height="404">
+            <!-- </div> -->
           </li>
 
           <li class="about_item about_item--card3">
             <div class="about__wrapper">
-              <p class="about_tag about_tag--2 text-tag">Что мне дадут?</p>
-              <h3 class="about_card title-card">Актуальные знания</h3>
-              <p class="title-text text-base">
+              <p class="about__tag about__tag--2 text-tag">Что мне дадут?</p>
+              <h3 class="about__card title-card">Актуальные знания</h3>
+              <p class="about__text text-base">
                 Знаем, какие навыки нужны работодателям. Составляем программы, ориентируясь на тенденции рынка
               </p>
             </div>
@@ -148,7 +154,7 @@
         <ul class="community__students">
           <li class="community__student">
             <div class="community__wrapper-img">
-              <img class="community__img" src="./img/ava/ava1.jpg" alt="студент-1" width="90" height="90">
+              <img class="community__img" src="./img/ava/ava1.jpg" alt="студент-1" width="92" height="92">
             </div>
           </li>
 
@@ -170,9 +176,10 @@
             </div>
           </li>
 
-          <li class="community__student">
-            <div class="community__wrapper-still">
-            </div>
+          <li class="">
+           <a class="community__wrapper-still" href="#">
+            <span class="visually-hidden">Ещё</span>
+           </a>
           </li>
         </ul>
 
@@ -180,18 +187,18 @@
           <li class="community__benefit benefit benefit--big">
             <!-- ?? тут точно Н3 ??????? -->
             <h3 class="benefit__title benefit__title--big">Более 100</h3>
-            <p class="benefit__text text-base text-base--big">выпускников за все время<br>работы академии</p>
+            <p class="benefit__text text-base">выпускников за все время<br>работы академии</p>
           </li>
 
           <li class="community__benefit benefit">
             <h3 class="benefit__title">78%</h3>
-            <p class="benefit__text text-base text-base--big">готовы рекомендовать академию<br>spreent своим друзьям
+            <p class="benefit__text text-base">готовы рекомендовать академию<br>spreent своим друзьям
               и коллегам</p>
           </li>
 
           <li class="community__benefit benefit">
             <h3 class="benefit__title">89%</h3>
-            <p class="benefit__text text-base text-base--big">отмечают качество и пользу<br>знаний, полученных в spreent
+            <p class="benefit__text text-base">отмечают качество и пользу<br>знаний, полученных в spreent
             </p>
           </li>
         </ul>
@@ -254,7 +261,7 @@
               <p class="text-mini">или</p>
               <div class="price__count-wrapper">
 
-                <span>419 000 ₸</span> <span class="price__count--old">552 000 ₸</span>
+                <span>419&nbsp;000&nbsp;₸</span> <span class="price__count--old">552&nbsp;000&nbsp;₸</span>
               </div>
             </div>
 
@@ -273,8 +280,8 @@
         <h2 class="work__title title-section">
           Где работают<br>наши выпускники
         </h2>
-        <p class="work__text text-base">
-          Начните работать в крупнейших<br>компания индустрии
+        <p class="work__text text-base text-base--big">
+          Начните работать в крупнейших<br>компанияx индустрии
         </p>
         <button class="work__button button text-button" type="button">
           Присоединиться
@@ -452,7 +459,7 @@
   </footer>
 
 
-  <!-- <script type="module" src="js/main.js"></script> -->
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

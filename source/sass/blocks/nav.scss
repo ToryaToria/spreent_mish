@@ -1,5 +1,5 @@
 .nav {
-  display: none;
+  // display: none;
 
   @include media-desktop {
     display: block;
@@ -8,9 +8,13 @@
 
 .nav__list {
   @include list-reset;
+display: flex;
+flex-direction: column;
+gap: 10px;
+
 
   @include media-desktop {
-  display: flex;
+    flex-direction: row;
   gap: 20px;
   }
 }

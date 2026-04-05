@@ -1,0 +1,19 @@
+.overlay {
+  overflow-y: hidden;
+
+    @include media-desktop {
+    display: none;
+    }
+}
+
+.overlay::after {
+  content: "";
+  z-index: 2;
+  // background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(80px);
+  // filter: blur(10px);
+}

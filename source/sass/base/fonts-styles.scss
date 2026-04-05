@@ -1,18 +1,18 @@
 .title-hero {
   @include font($family: $font-title, $size: 40px, $line-height: 98%);
 
-  letter-spacing: -0.01em;
+  letter-spacing: 0.05em;
 
   @include media-desktop {
     font-size: 90px;
     line-height: 88px;
-    letter-spacing: 0;
+    letter-spacing: 0.06em;
   }
 }
 
 .title-section {
   @include font($family: $font-title, $size: 38px, $line-height: 98%);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.05em;
 
   @include media-desktop {
     font-size: 55px;
@@ -22,6 +22,12 @@
 
 .text-base {
   @include font($size: 18px, $line-height: 140%);
+
+  &--big {
+    @include media-desktop {
+      font-size: 24px;
+    }
+  }
 }
 
 .subtitle {
@@ -75,11 +81,12 @@
 
 .text-little {
   @include font($size: 14px, $line-height: 130%);
+  letter-spacing: 0.02em;
 }
 
 .text-nav {
   @include font($family: $font-title-w, $size: 30px, $line-height: 102%);
-text-decoration: none;
+  text-decoration: none;
   @include media-desktop {
     font-size: 18px;
     line-height: 140%;

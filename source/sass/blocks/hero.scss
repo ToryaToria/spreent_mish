@@ -9,11 +9,10 @@
 }
 
 .hero__title {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @include media-desktop {
-    margin-top: 193px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -21,19 +20,61 @@
   margin-bottom: 25px;
 
   @include media-desktop {
-    margin-bottom: 35px;
-  }
+    margin-bottom: 37px;
+    margin-left: 255px;
+    }
 }
 
 .hero__wrapper-content {
-  margin-bottom: 29px;
   margin-bottom: 40px;
+  gap: 4px;
+
+  display: flex;
+  &::before {
+    content: "—";
+
+    @include font($family: $font-title, $size: 40px, $line-height: 98%);
+
+    letter-spacing: -0.01em;
+
+    @include media-desktop {
+      font-size: 90px;
+      line-height: 88px;
+      letter-spacing: 0;
+    }
+  }
+
+  @include media-desktop {
+    margin-top: -46px;
+  }
+}
+
+.hero__indent {
+  display: block;
+  @include media-desktop {
+    margin-top: -5px;
+    margin-left: 255px;
+  }
 }
 
 .hero__wrapper-artur {
   display: flex;
-  align-items: center;
+  align-items: start;
+  gap: 41px;
   margin-left: 21px;
+  margin-bottom: 29px;
+
+  background-color: beige;
+
+  @include media-desktop {
+    justify-content: start;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 113px;
+    margin-bottom: 0;
+
+    gap: 62px;
+  }
 }
 
 .hero__name {
@@ -43,12 +84,35 @@
 }
 
 .hero__wrapper-name {
+  margin-top: 17px;
   &::before {
     content: "";
     display: block;
     width: 26px;
     height: 26px;
     background-image: url("../../img/sprite/hand.svg");
+  }
+
+  &--sergey {
+    margin-left: 110px;
+    margin-top: 14px;
+
+    &::before {
+      background-image: url("../../img/sprite/cursor-arrow.svg");
+    }
+  }
+
+  &--misha {
+    margin-bottom: 29px;
+    width: fit-content;
+    margin-left: 14px;
+    &::before {
+      background-image: url("../../img/sprite/cursor-arrow.svg");
+    }
+  }
+
+  @include media-desktop {
+    margin-top: 31px;
   }
 }
 
@@ -59,13 +123,12 @@
   width: 221px;
   height: 135px;
 
-   @include media-desktop {
+  @include media-desktop {
     width: 329px;
     height: 200px;
   }
 
-   &--sergey {
-    margin-left: 41px;
+  &--sergey {
     width: 117px;
     height: 171px;
 
@@ -80,10 +143,24 @@
   display: flex;
   gap: 19px;
   justify-content: space-between;
+  align-items: flex-end;
+
+      @include media-desktop {
+      margin-top: -280px;
+      }
 }
 
 .hero__wrapper-sergey,
 .hero__wrapper-misha {
   display: flex;
   flex-direction: column;
+
+  background-color: rgb(220, 220, 173);
 }
+
+.hero__button {
+@include media-desktop {
+    margin-bottom: 35px;
+    margin-left: 255px;
+    }
+  }
