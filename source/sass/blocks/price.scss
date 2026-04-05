@@ -39,18 +39,27 @@
   }
 }
 
-.price__list {
-  @include list-reset;
-  display: grid;
-  flex-direction: column;
-  gap: 15px;
+.price__wrapper-list {
+    display: flex;
+    flex-direction: column;
   margin-bottom: 37px;
+  gap: 15px;
 
   @include media-desktop {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-      margin-bottom: 61px;
+    flex-direction: row;
+    margin-bottom: 61px;
+    gap: 128px;
+  }
+}
 
+.price__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include media-desktop {
+    gap: 10px;
   }
 }
 

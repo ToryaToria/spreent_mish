@@ -1,10 +1,12 @@
 .hero {
-  padding-top: 40px;
-  padding-bottom: 61px;
+  position: relative;
+  padding-top: 204px;
+  padding-bottom: 340px;
+  background-color: azure;
 
   @include media-desktop {
-    padding-top: 34px;
-    padding-bottom: 98px;
+    padding-top: 189px;
+    padding-bottom: 197px;
   }
 }
 
@@ -22,19 +24,17 @@
   @include media-desktop {
     margin-bottom: 37px;
     margin-left: 255px;
-    }
+  }
 }
 
 .hero__wrapper-content {
-  margin-bottom: 40px;
+  display: flex;
   gap: 4px;
 
-  display: flex;
   &::before {
     content: "—";
 
     @include font($family: $font-title, $size: 40px, $line-height: 98%);
-
     letter-spacing: -0.01em;
 
     @include media-desktop {
@@ -42,10 +42,6 @@
       line-height: 88px;
       letter-spacing: 0;
     }
-  }
-
-  @include media-desktop {
-    margin-top: -46px;
   }
 }
 
@@ -58,22 +54,22 @@
 }
 
 .hero__wrapper-artur {
+  position: absolute;
+  top: 40px;
+  right: 91px;
+
   display: flex;
   align-items: start;
   gap: 41px;
-  margin-left: 21px;
-  margin-bottom: 29px;
 
   background-color: beige;
 
   @include media-desktop {
     justify-content: start;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 113px;
-    margin-bottom: 0;
-
     gap: 62px;
+
+    top: 34px;
+    right: 153px;
   }
 }
 
@@ -93,12 +89,21 @@
     background-image: url("../../img/sprite/hand.svg");
   }
 
+  @include media-desktop {
+    margin-top: 31px;
+  }
+
   &--sergey {
     margin-left: 110px;
     margin-top: 14px;
 
     &::before {
       background-image: url("../../img/sprite/cursor-arrow.svg");
+    }
+
+    @include media-desktop {
+      margin-left: 0;
+      margin-top: 0;
     }
   }
 
@@ -109,10 +114,13 @@
     &::before {
       background-image: url("../../img/sprite/cursor-arrow.svg");
     }
-  }
 
-  @include media-desktop {
-    margin-top: 31px;
+    @include media-desktop {
+      margin-top: 21px;
+      margin-left: 0;
+      margin-bottom: 0;
+      order: 1;
+    }
   }
 }
 
@@ -126,6 +134,8 @@
   @include media-desktop {
     width: 329px;
     height: 200px;
+      border-radius: 24px;
+
   }
 
   &--sergey {
@@ -135,32 +145,52 @@
     @include media-desktop {
       width: 175px;
       height: 256px;
+      margin-bottom: 8px;
     }
   }
 }
 
-.hero__wrapper-others {
-  display: flex;
-  gap: 19px;
-  justify-content: space-between;
-  align-items: flex-end;
-
-      @include media-desktop {
-      margin-top: -280px;
-      }
-}
-
 .hero__wrapper-sergey,
 .hero__wrapper-misha {
+  position: absolute;
   display: flex;
   flex-direction: column;
 
   background-color: rgb(220, 220, 173);
 }
 
+.hero__wrapper-sergey {
+  left: 15px;
+  bottom: 61px;
+
+  @include media-desktop {
+    left: 94px;
+    bottom: 110px;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: start;
+    align-items: flex-end;
+  }
+}
+
+.hero__wrapper-misha {
+  right: 15px;
+  bottom: 61px;
+
+  @include media-desktop {
+    right: 163px;
+    bottom: 98px;
+
+    flex-direction: row;
+    gap: 18px;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
+
 .hero__button {
-@include media-desktop {
+  @include media-desktop {
     margin-bottom: 35px;
     margin-left: 255px;
-    }
   }
+}
