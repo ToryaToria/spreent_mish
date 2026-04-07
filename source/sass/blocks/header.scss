@@ -12,7 +12,6 @@
 
 .header__container {
   display: flex;
-  // justify-content: center;
   align-items: center;
   padding-right: 0;
 
@@ -42,9 +41,6 @@
   left: -550px;
   padding: 15px 30px 15px 36px;
   background-color: $color-white;
-  // background-color: rgb(200, 223, 223);
-
-  // z-index: 20;
 
   transition: all 0.3s;
 

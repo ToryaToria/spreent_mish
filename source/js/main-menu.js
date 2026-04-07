@@ -2,7 +2,7 @@ const body = document.body;
 const btnMenu = document.querySelector('.btn-menu');
 const nav = document.querySelector('.nav');
 
-const navLinks = document.querySelectorAll('.nav__link');
+// const navLinks = document.querySelectorAll('.nav__link');
 
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
@@ -24,11 +24,11 @@ const onDocumentClick = (evt) => {
 };
 
 // закрываю меню, если протабала его полностью.
-const tabbingOutNav = (e) => {
-  if (isTabKey(e) && !isFocus(nav)) {
-    closeMenu();
-  }
-};
+// const tabbingOutNav = (e) => {
+//   if (isTabKey(e) && !isFocus(nav)) {
+//     closeMenu();
+//   }
+// };
 
 btnMenu.addEventListener('click', () => {
   document.addEventListener('keydown', onDocumentKeydown);
@@ -39,9 +39,9 @@ btnMenu.addEventListener('click', () => {
   nav.classList.toggle('header__nav--open');
 
 
-  navLinks.forEach((elem) => {
-    elem.setAttribute('tabindex', '0');
-  });
+  // navLinks.forEach((elem) => {
+  //   elem.setAttribute('tabindex', '0');
+  // });
 
 });
 
@@ -50,18 +50,18 @@ function closeMenu() {
   body.classList.remove('overlay');
   nav.classList.remove('header__nav--open');
 
-  navLinks.forEach((elem) => {
-    elem.setAttribute('tabindex', '-1');
-  });
+  // navLinks.forEach((elem) => {
+  //   elem.setAttribute('tabindex', '-1');
+  // });
 
   document.removeEventListener('keydown', onDocumentKeydown);
   body.removeEventListener('click', onDocumentClick);
 }
 
-navLinks.forEach((elem) => {
-  elem.addEventListener('click', () => {
-    closeMenu();
-  });
-});
+// navLinks.forEach((elem) => {
+//   elem.addEventListener('click', () => {
+//     closeMenu();
+//   });
+// });
 
-document.addEventListener('keyup', tabbingOutNav);
+// document.addEventListener('keyup', tabbingOutNav);

@@ -33,6 +33,7 @@
   padding: 15px 25px;
   border-radius: 100px;
   background-color: $color-white-20;
+  border: 1px solid $color-white-20;
   border: 0;
   height: 55px;
 
@@ -45,12 +46,31 @@
       }
 }
 
+
+.form__field:focus {
+  outline: none;
+}
+
+.form__field:focus-visible {
+  outline: 1px solid $color-white-50;
+  outline-offset: 3px;
+}
+
+.form__field:hover {
+  background-color: $color-white-70;
+  border: 1px solid $color-white;
+
+}
+
+.form__field:invalid {
+  border: 1px solid red;
+    // outline: none;
+
+}
+
 .form__button {
   width: fit-content;
-  background-color: $color-accent;
-  border: 1px solid $color-accent;
-  color: $color-text;
-  margin-top: 3px;
+    margin-top: 3px;
 
     @include media-desktop {
     margin-top: 0;

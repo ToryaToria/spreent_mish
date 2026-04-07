@@ -1,6 +1,4 @@
 .nav {
-  // display: none;
-
   @include media-desktop {
     display: block;
   }
@@ -8,13 +6,44 @@
 
 .nav__list {
   @include list-reset;
-display: flex;
-flex-direction: column;
-gap: 10px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
   @include media-desktop {
     flex-direction: row;
-  gap: 20px;
+    gap: 20px;
   }
 }
+
+.nav__link {
+  position: relative;
+  display: block;
+
+  &::after {
+   @include hover-line;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+  }
+}
+
+.nav__link:focus {
+  outline: none;
+}
+
+.nav__link:focus-visible {
+outline:1px solid currentColor;
+  outline-offset: 3px;
+}
+
+
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav__link:active {
+     color: $color-text-70;
+}
+

@@ -28,23 +28,22 @@
       <nav class="header__nav nav" aria-label="основная навигация сайта">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#about" tabindex="-1">Об академии</a>
+            <a class="nav__link text-nav" href="#about-">Об академии</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#" tabindex="-1">Курсы</a>
+            <a class="nav__link text-nav" href="#">Курсы</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#" tabindex="-1">Корпоративное обучение</a>
+            <a class="nav__link text-nav" href="#">Корпоративное обучение</a>
           </li>
         </ul>
       </nav>
 
-      <button class="header__button button button--mini text-button" type="button">
-        <!-- ссылка или кнопка?   -->
+      <a class="header__button button button--mini text-button" href="#form" data-text="Начать">
         Начать
-      </button>
+      </a>
 
       <button class="header__btn-menu btn-menu" type="button">
         <span class="visually-hidden">Меню</span>
@@ -175,7 +174,7 @@
           </li>
 
           <li class="">
-            <a class="community__wrapper-still" href="#">
+            <a class="community__still" href="#">
               <span class="visually-hidden">Ещё</span>
             </a>
           </li>
@@ -368,7 +367,7 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="form">
       <div class="container">
         <h2 class="form__title title-section">
           Сделайте апгрейд карьеры
@@ -388,7 +387,7 @@
           <span class="visually-hidden">Почта</span>
           <input class="form__field" type="email" name="email" id="email" required placeholder="Почта">
 
-          <button class="form__button button text-button" type="submit">Оставить заявку</button>
+          <button class="form__button button  button--form text-button" type="submit">Оставить заявку</button>
         </form>
 
         <p class="form__text text-little">
