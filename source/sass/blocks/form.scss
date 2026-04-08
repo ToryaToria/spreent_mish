@@ -5,7 +5,7 @@
   margin-top: -150px;
 
   @include media-desktop {
-      padding-top: 340px;
+    padding-top: 340px;
 
     margin-top: -250px;
   }
@@ -36,45 +36,65 @@
   border: 1px solid $color-white-20;
   border: 0;
   height: 55px;
+  color: $color-white;
 
   &::placeholder {
     color: $color-white-50;
   }
 
-      @include media-desktop {
-      width: 378px;
-      }
+  @include media-desktop {
+    width: 378px;
+  }
 }
 
-
-.form__field:focus {
+.form__field:not(:disabled):focus {
   outline: none;
 }
 
-.form__field:focus-visible {
+.form__field:not(:disabled):focus-visible {
   outline: 1px solid $color-white-50;
   outline-offset: 3px;
+  color: $color-text;
 }
 
-.form__field:hover {
+.form__field:not(:disabled):hover,
+.form__field:not(:disabled):active {
   background-color: $color-white-70;
   border: 1px solid $color-white;
-
 }
 
-.form__field:invalid {
-  border: 1px solid red;
-    // outline: none;
+.form__field:disabled {
+  background-color: $color-disabled;
+}
 
+.form__field:not(:placeholder-shown):invalid {
+  border: 1px solid $color-error;
+}
+
+.form__field:not(:placeholder-shown):invalid + .form__err {
+  display: block;
+}
+
+.form__wrapper {
+  position: relative;
+}
+
+
+.form__err {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  left: 20px;
+
+   color: $color-error;
 }
 
 .form__button {
-  width: fit-content;
-    margin-top: 3px;
+  margin-top: 3px;
 
-    @include media-desktop {
+  @include media-desktop {
     margin-top: 0;
-    }
+  }
 }
 
 .form__text {

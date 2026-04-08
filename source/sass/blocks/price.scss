@@ -98,14 +98,14 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 30px;
-  border-top: 1px solid red;
+  border-top: $color-line;
 
   @include media-desktop {
     border-top: none;
     padding-top: 0;
     flex-direction: column;
     border-top: none;
-    border-left: 1px solid red;
+    border-left: 1px solid $color-line;
     padding-left: 40px;
   }
 }

@@ -2,7 +2,7 @@
   position: relative;
   z-index: 30;
   background-color: $color-white;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid $color-line;
 
   @include media-desktop {
     padding-top: 17px;
@@ -55,4 +55,15 @@
 
 .header__nav--open {
   left: 0;
+}
+
+.header__list {
+display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include media-desktop {
+    flex-direction: row;
+    gap: 20px;
+  }
 }

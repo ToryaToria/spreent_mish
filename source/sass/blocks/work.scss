@@ -60,7 +60,7 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px solid red;
+  border: 1px solid $color-line;
   border-left: 0;
   width: 160px;
   height: 160px;
@@ -68,7 +68,7 @@
   @include media-desktop {
     width: 240px;
     height: 240px;
-    border-left: 1px solid red;
+    border-left: 1px solid $color-line;
     border-right: 0;
   }
 
@@ -90,7 +90,7 @@
     border-top: 0;
 
     @include media-desktop {
-      border-top: 1px solid red;
+      border-top: $color-line;
     }
   }
 
@@ -98,7 +98,7 @@
     grid-area: w5;
     border-top: 0;
     @include media-desktop {
-      border-top: 1px solid red;
+      border-top: 1px solid $color-line;
     }
   }
 
@@ -107,7 +107,7 @@
     border-right: 0;
     border-top: 0;
     @include media-desktop {
-      border-top: 1px solid red;
+      border-top: 1px solid $color-line;
     }
   }
 
@@ -115,8 +115,8 @@
     grid-area: w7;
     border-top: 0;
     @include media-desktop {
-      border-top: 1px solid red;
-      border-right: 1px solid red;
+      border-top: 1px solid $color-line;
+      border-right: 1px solid $color-line;
     }
   }
 

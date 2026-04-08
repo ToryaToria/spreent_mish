@@ -26,7 +26,7 @@
       <img class="header__logo" src="./img/logo.svg" alt="logo" width="127" height="28">
 
       <nav class="header__nav nav" aria-label="основная навигация сайта">
-        <ul class="nav__list">
+        <ul class="header__list nav__list">
           <li class="nav__item">
             <a class="nav__link text-nav" href="#about-">Об академии</a>
           </li>
@@ -70,9 +70,9 @@
               строится обучение в spreent
             </p>
 
-            <button class="hero__button button text-button" type="button">
+            <a class="hero__button button text-button" href="#form">
               Начать учиться
-            </button>
+            </a>
           </div>
         </div>
 
@@ -266,9 +266,9 @@
               </div>
             </div>
 
-            <button class="price__button button text-button" type="button">
+            <a class="price__button button text-button" href="#form">
               Купить курс
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -283,9 +283,9 @@
         <p class="work__text text-base text-base--big">
           Начните работать в крупнейших<br>компанияx индустрии
         </p>
-        <button class="work__button button text-button" type="button">
+        <a class="work__button button text-button" href="#form">
           Присоединиться
-        </button>
+        </a>
       </div>
 
       <ul class="work__list">
@@ -357,9 +357,9 @@
           Обучение ведется на основании лицензии государственного образца
         </p>
 
-        <button class="certificate__button button text-button" type="button">
+        <a class="certificate__button button text-button" href="#form">
           Начать учиться
-        </button>
+        </a>
       </div>
 
       <div class="certificate__card">
@@ -373,20 +373,36 @@
           Сделайте апгрейд карьеры
         </h2>
 
-        <form class="form__form" action="">
+        <form class="form__form" action="http://echo.htmlacademy.ru/" autocomplete="off" method="post">
           <label class="visually-hidden" for="name">
           </label>
           <span class="visually-hidden">Имя</span>
-          <input class="form__field" type="text" name="name" id="name" required placeholder="Имя">
+          <div class="form__wrapper">
+
+            <input class="form__field" type="text" name="name" id="name" required placeholder="Имя"
+              pattern="[A-Za-zА-Яа-яЁё\s]+$">
+            <span class="form__err text-little">Только буквы и пробел!</span>
+          </div>
 
           <label class="visually-hidden" for="tel">Телефон</label>
           <span class="visually-hidden">Телефон</span>
-          <input class="form__field" type="tel" name="tel" id="tel" required placeholder="Телефон">
+
+          <div class="form__wrapper">
+            <input class="form__field" type="tel" name="tel" id="tel" required placeholder="Телефон"
+              pattern="[^A-Za-zА-Яа-яЁё]+$">
+            <span class="form__err text-little">Только цифры!</span>
+          </div>
+
 
           <label class="visually-hidden" for="email">Почта</label>
           <span class="visually-hidden">Почта</span>
-          <input class="form__field" type="email" name="email" id="email" required placeholder="Почта">
+          <div class="form__wrapper">
 
+            <input class="form__field" type="email" name="email" id="email" required placeholder="Почта"
+              pattern="[a-zA-Z0–9. _%+-]+@[a-zA-Z0–9. -]+\. [a-zA-Z]{2,}$">
+            <span class="form__err text-little">У валидного email должны быть "@" и "."</span>
+
+          </div>
           <button class="form__button button  button--form text-button" type="submit">Оставить заявку</button>
         </form>
 
@@ -404,42 +420,42 @@
         <div class="footer__wpapper">
           <img class="footer__logo" src="./img/logo-white.svg" alt="logo" width="267" height="59">
 
-          <nav class="footer__nav">
-            <ul class="footer__list">
+          <nav class="footer__nav nav">
+            <ul class="footer__list nav__list">
               <li class="footer__item">
-                <a class="footer__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="">
                   Об академии
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="">
                   Корпоративное обучение
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="">
                   Оплата
                 </a>
               </li>
             </ul>
 
-            <ul class="footer__list">
+            <ul class="footer__list nav__list">
               <li class="footer__item">
-                <a class="footer__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="">
                   Личный кабинет
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="">
                   Связаться с нами
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="">
                   Политика конфиденциальности
                 </a>
               </li>
