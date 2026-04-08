@@ -27,6 +27,12 @@
   }
 }
 
+@mixin media-tabl {
+  @media (min-width: $tabl-width) {
+    @content;
+  }
+}
+
 @mixin media-mobile {
   @media (min-width: $mobile-width) {
     @content;

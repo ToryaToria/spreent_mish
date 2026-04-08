@@ -1,12 +1,12 @@
 .community {
-  padding-top: 60px;
+  margin-top: 60px;
   padding-bottom: 117px;
+  border-top: 1px solid $color-line;
 
   @include media-desktop {
     padding-top: 0;
     margin-top: 80px;
     padding-bottom: 80px;
-    border-top: 1px solid $color-line;
   }
 }
 
@@ -50,17 +50,19 @@
 
   width: 90px;
   height: 90px;
+  // overflow: hidden;
 
   background-color: aquamarine;
 
   mask-image: url(../../img/mask.svg);
   mask-position: center;
-  mask-size: 120px 120px;
+  mask-size: 90px 90px;
   mask-repeat: no-repeat;
 
   @include media-desktop {
     width: 120px;
     height: 120px;
+    mask-size: 120px 120px;
   }
 }
 
@@ -68,8 +70,12 @@
   display: block;
   width: 100%;
   height: auto;
-  object-position: 1px -4px;
- }
+  object-position: 6px -0;
+
+  @include media-desktop {
+    object-position: 9px 0;
+  }
+}
 
 .community__still {
   box-sizing: border-box;

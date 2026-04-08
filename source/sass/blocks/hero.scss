@@ -3,6 +3,11 @@
   padding-top: 204px;
   padding-bottom: 340px;
 
+  @media (min-width: 1124px) {
+    padding-top: 180px;
+    padding-bottom: 250px;
+  }
+
   @include media-desktop {
     padding-top: 189px;
     padding-bottom: 197px;
@@ -22,33 +27,23 @@
 
   @include media-desktop {
     margin-bottom: 37px;
-    margin-left: 255px;
   }
 }
 
 .hero__wrapper-content {
   display: flex;
   gap: 4px;
-
-  &::before {
-    content: "—";
-
-    @include font($family: $font-title, $size: 40px, $line-height: 98%);
-    letter-spacing: -0.01em;
-
-    @include media-desktop {
-      font-size: 90px;
-      line-height: 88px;
-      letter-spacing: 0;
-    }
-  }
 }
 
 .hero__indent {
+  // margin-left: 42px;
+
+  margin-left: calc(42px + (345 - 42) * (100vw - 480px) / 960);
+
   display: block;
   @include media-desktop {
-    margin-top: -5px;
-    margin-left: 255px;
+    // margin-top: -5px;
+    margin-left: 345px;
   }
 }
 
@@ -78,6 +73,7 @@
 
 .hero__wrapper-name {
   margin-top: 17px;
+
   &::before {
     content: "";
     display: block;
@@ -125,19 +121,21 @@
   display: block;
   border-radius: 16px;
 
-  width: 221px;
-  height: 135px;
+  // width: 221px;
+  width: calc(221px + (329 - 221) * (100vw - 480px) / 960);
+  height: auto;
 
   @include media-desktop {
     width: 329px;
     height: 200px;
-      border-radius: 24px;
-
+    border-radius: 24px;
   }
 
   &--sergey {
     width: 117px;
-    height: 171px;
+    // height: 171px;
+
+    width: calc(117px + (175 - 117) * (100vw - 480px) / 960);
 
     @include media-desktop {
       width: 175px;
@@ -155,7 +153,7 @@
 }
 
 .hero__wrapper-sergey {
-  left: 15px;
+  // left: 15px;
   bottom: 61px;
 
   @include media-desktop {
@@ -169,7 +167,7 @@
 }
 
 .hero__wrapper-misha {
-  right: 15px;
+  right: calc(15px + (163 - 15) * (100vw - 480px) / 960);
   bottom: 61px;
 
   @include media-desktop {
@@ -186,6 +184,5 @@
 .hero__button {
   @include media-desktop {
     margin-bottom: 35px;
-    margin-left: 255px;
   }
 }
