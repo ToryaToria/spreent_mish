@@ -4,14 +4,17 @@
   background-color: $color-text;
   margin-top: -150px;
 
-      @include media-tabl {
-      padding-top: 340px;
-    margin-top: -300px;
-      }
-
-
-  @include media-desktop {
+  @include media-tabl {
     padding-top: 340px;
+    margin-top: -300px;
+  }
+
+  @include desktop-1024 {
+    // padding-top: 340px;
+    margin-top: -250px;
+  }
+  @include media-desktop {
+    // padding-top: 340px;
     margin-top: -250px;
   }
 }
@@ -22,11 +25,11 @@
   gap: 10px;
   margin-bottom: 40px;
 
-    @include desktop-1024 {
-     flex-direction: row;
+  @include desktop-1024 {
+    flex-direction: row;
     gap: 20px 5px;
     flex-wrap: wrap;
-    }
+  }
 
   @include media-desktop {
     flex-direction: row;
@@ -42,7 +45,7 @@
 
 .form__field {
   box-sizing: border-box;
-    width: 100%;
+  width: 100%;
 
   padding: 15px 25px;
   border-radius: 100px;
@@ -92,11 +95,10 @@
 .form__wrapper {
   position: relative;
 
-   @include desktop-1024 {
-      flex-grow: 1;
-      }
+  @include desktop-1024 {
+    flex-grow: 1;
+  }
 }
-
 
 .form__err {
   display: none;
@@ -104,15 +106,15 @@
   bottom: -25px;
   left: 20px;
 
-   color: $color-error;
+  color: $color-error;
 }
 
 .form__button {
   margin-top: 5px;
 
-     @include desktop-1024 {
+  @include desktop-1024 {
     margin-left: auto;
-       }
+  }
 
   @include media-desktop {
     margin-top: 0;

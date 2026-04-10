@@ -7,8 +7,9 @@
   <title>Spreent</title>
   <meta name="description" content="Опыт, практика, актуальные знания">
 
-  <link rel="icon" href="./favicon.ico">
-  <link rel="icon" href="./img/favicons/favicon.png" type="image/png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="./img/favicons/favicon.png">
+
   <link rel="mask-icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
@@ -53,13 +54,23 @@
 
   <main class="page__main">
     <section class="hero">
-      <div class="container">
+      <div class="hero__container container">
         <h1 class="visually-hidden">Академия "Спринт"</h1>
         <div class="hero__wrapper-artur">
           <div class="hero__wrapper-name">
             <p class="hero__name text-name">Артур</p>
           </div>
-          <img class="hero__img" src="../../img/name/artur.jpg" alt="Артур">
+
+          <div class="hero__wrapper-img">
+            <picture>
+              <source type="image/webp" srcset="./img/name/artur-1x.webp 1x,
+                ./img/name/artur-2x.webp 2x" width="221" height="135">
+
+              <img class="hero__img" src="./img/name/artur-1x.jpg" srcset="./img/name/artur-2x.jpg 2x" alt="Артур"
+                width="221" height="135">
+            </picture>
+          </div>
+
         </div>
 
         <div class="hero__wrapper-content">
@@ -78,8 +89,15 @@
         </div>
 
         <div class="hero__wrapper-sergey">
-          <img class="hero__img hero__img--sergey" src="../../img/name/sergey.jpg" alt="Сергей" width="117"
-            height="171">
+          <div class="hero__wrapper-img hero__wrapper-img--sergey">
+            <picture>
+              <source type="image/webp" srcset="./img/name/sergey-1x.webp 1x,
+                ./img/name/sergey-2x.webp 2x" width="117" height="171">
+
+              <img class="hero__img hero__img--sergey" src="./img/name/sergey-1x.jpg"
+                srcset="/img/name/sergey-2x.jpg 2x" alt="Сергей" width="117" height="171">
+            </picture>
+          </div>
           <div class="hero__wrapper-name hero__wrapper-name--sergey">
             <p class="hero__name text-name">Сергей</p>
           </div>
@@ -89,9 +107,17 @@
           <div class="hero__wrapper-name hero__wrapper-name--misha">
             <p class="hero__name text-name">Миша</p>
           </div>
-          <img class="hero__img" src="../../img/name/misha.jpg" alt="Миша" width="221" height="135">
+
+          <div class="hero__wrapper-img">
+            <picture>
+              <source type="image/webp" srcset="./img/name/misha-1x.webp 1x,
+                ./img/name/misha-2x.webp 2x" width="221" height="135">
+
+              <img class="hero__img" src="./img/name/misha-1x.jpg" srcset="/img/name/misha-2x.jpg 2x" alt="Миша"
+                width="221" height="135">
+            </picture>
+          </div>
         </div>
-      </div>
     </section>
 
     <section class="about" id="about">
@@ -123,7 +149,13 @@
               </p>
             </div>
 
-            <img class="about__img about__img--card2" src="./img/card/card2.png" alt="препод" width="364" height="404">
+            <picture>
+              <source type="image/webp" srcset="./img/card/card2-1x.webp 1x,
+                ./img/card/card2-2x.webp 2x" width="364" height="404">
+
+              <img class="about__img about__img--card2" src="./img/card/card2-1x.png" srcset="/img/name/card2-2x.jpg 2x"
+                alt="препод" width="364" height="404">
+            </picture>
           </li>
 
           <li class="about_item about_item--card3">
@@ -149,25 +181,49 @@
         <ul class="community__students">
           <li class="community__student">
             <div class="community__wrapper-img">
-              <img class="community__img" src="./img/ava/ava1.jpg" alt="студент-1" width="92" height="92">
+              <picture>
+                <source type="image/webp" srcset="./img/ava/ava1-1x.webp 1x,
+                ./img/ava/ava1-2x.webp 2x" width="92" height="92">
+
+                <img class="community__img" src="./img/ava/ava1-1x.jpg" srcset="/img/ava/ava1-2x.jpg 2x" alt="студент-1"
+                  width="92" height="92">
+              </picture>
             </div>
           </li>
 
           <li class="community__student">
             <div class="community__wrapper-img">
-              <img class="community__img" src="./img/ava/ava2.jpg" alt="студент-2" width="90" height="90">
+              <picture>
+                <source type="image/webp" srcset="./img/ava/ava2-1x.webp 1x,
+                ./img/ava/ava2-2x.webp 2x" width="90" height="90">
+
+                <img class="community__img" src="./img/ava/ava2-1x.jpg" srcset="/img/ava/ava2-2x.jpg 2x" alt="студент-2"
+                  width="90" height="90">
+              </picture>
             </div>
           </li>
 
           <li class="community__student">
             <div class="community__wrapper-img">
-              <img class="community__img" src="./img/ava/ava3.jpg" alt="студент-3" width="90" height="90">
+              <picture>
+                <source type="image/webp" srcset="./img/ava/ava3-1x.webp 1x,
+                ./img/ava/ava3-2x.webp 2x" width="90" height="90">
+
+                <img class="community__img" src="./img/ava/ava3-1x.jpg" srcset="/img/ava/ava3-2x.jpg 2x" alt="студент-3"
+                  width="90" height="90">
+              </picture>
             </div>
           </li>
 
           <li class="community__student">
             <div class="community__wrapper-img">
-              <img class="community__img" src="./img/ava/ava4.jpg" alt="студент-4" width="90" height="90">
+              <picture>
+                <source type="image/webp" srcset="./img/ava/ava4-1x.webp 1x,
+                ./img/ava/ava4-2x.webp 2x" width="90" height="90">
+
+                <img class="community__img" src="./img/ava/ava4-1x.jpg" srcset="/img/ava/ava4-2x.jpg 2x" alt="студент-4"
+                  width="90" height="90">
+              </picture>
             </div>
           </li>
 
@@ -286,59 +342,61 @@
         </a>
       </div>
 
+
+
       <ul class="work__list">
         <li class="work__item work__item--w1">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/sber.svg" alt="сбер">
+            <img class="work__img" src="./img/compamy/sber.svg" alt="сбер" width="80" height="22">
           </div>
         </li>
 
         <li class="work__item work__item--w2">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/mts.svg" alt="мтс">
+            <img class="work__img" src="./img/compamy/mts.svg" alt="мтс" width="28" height="28">
           </div>
         </li>
 
         <li class="work__item work__item--w3">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/vtb.svg" alt="втб">
+            <img class="work__img" src="./img/compamy/vtb.svg" alt="втб" width="63" height="23">
           </div>
         </li>
 
 
         <li class="work__item work__item--w4">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/mish.svg" alt="mish">
+            <img class="work__img" src="./img/compamy/mish.svg" alt="mish" width="53" height="20">
           </div>
         </li>
 
         <li class="work__item work__item--w5">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/chulakov.svg" alt="чулаков">
+            <img class="work__img" src="./img/compamy/chulakov.svg" alt="чулаков" width="88" height="10">
           </div>
         </li>
 
         <li class="work__item work__item--w6">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/vc.svg" alt="vc.ru">
+            <img class="work__img" src="./img/compamy/vc.svg" alt="vc.ru" width="30" height="27">
           </div>
         </li>
 
         <li class="work__item work__item--w7">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/epam.svg" alt=" epam">
+            <img class="work__img" src="./img/compamy/epam.svg" alt=" epam" width="59" height="19">
           </div>
         </li>
 
         <li class="work__item work__item--w8">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/sportmaster.svg" alt="спортмастер">
+            <img class="work__img" src="./img/compamy/sportmaster.svg" alt="спортмастер" width="112" height="17">
           </div>
         </li>
 
         <li class="work__item work__item--w9">
           <div class="work__wrapper-img">
-            <img class="work__img" src="./img/compamy/rustore.svg" alt="ruStore">
+            <img class="work__img" src="./img/compamy/rustore.svg" alt="ruStore" width="100" height="25">
           </div>
         </li>
       </ul>
@@ -346,24 +404,30 @@
   </main>
 
   <footer class="footer-all">
-    <section class="certificate certificate__container">
-      <div class="certificate__content">
-        <h2 class="certificate__title title-section">
-          Получи сертификат об успешном завершении курса
-        </h2>
-        <p class="certificate__text text-base">
-          Обучение ведется на основании лицензии государственного образца
-        </p>
+    <section class="certificate">
+      <div class="certificate__container">
+        <div class="certificate__content">
+          <h2 class="certificate__title title-section">
+            Получи сертификат об успешном завершении курса
+          </h2>
+          <p class="certificate__text text-base">
+            Обучение ведется на основании лицензии<br> государственного образца
+          </p>
 
-        <a class="certificate__button button text-button" href="#form">
-          Начать учиться
-        </a>
-      </div>
+          <a class="certificate__button button text-button" href="#form">
+            Начать учиться
+          </a>
+        </div>
 
-      <!-- width="448" height="300" -->
+        <div class="certificate__card">
+          <picture>
+            <source type="image/webp" srcset="./img/certifikate-1x.webp 1x,
+                ./img/certifikate-2x.webp 2x" width="90" height="90">
 
-      <div class="certificate__card">
-        <img class="certificate__img" src="./img/certifikate.jpg" alt="сертификат">
+            <img class="certificate__img" src="./img/certifikate-1x.jpg" srcset="/img/certifikate-2x.jpg 2x"
+              alt="сертификат" width="448" height="300">
+          </picture>
+        </div>
       </div>
     </section>
 

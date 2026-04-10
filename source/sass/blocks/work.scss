@@ -7,7 +7,6 @@
 
   @include desktop-1024 {
     grid-template-columns: 1fr 1fr;
-
   }
 
   @include media-desktop {
@@ -144,7 +143,7 @@
 
 .work__img {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
 
   @include media-desktop {
