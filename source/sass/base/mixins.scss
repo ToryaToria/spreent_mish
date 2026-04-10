@@ -27,6 +27,18 @@
   }
 }
 
+@mixin desktop-1024 {
+  @media (min-width: $desktop-1024) {
+    @content;
+  }
+}
+
+@mixin desktop-1280 {
+  @media (min-width: $desktop-1280) {
+    @content;
+  }
+}
+
 @mixin media-tabl {
   @media (min-width: $tabl-width) {
     @content;

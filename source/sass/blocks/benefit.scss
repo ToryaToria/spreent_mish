@@ -1,7 +1,11 @@
 .benefit--big {
+  @include media-tabl {
+    grid-area: big;
+  }
+
   @include media-desktop {
     grid-area: big;
-          margin-top: 18px;
+    margin-top: 18px;
   }
 }
 
@@ -10,20 +14,19 @@
   margin-bottom: 9px;
   letter-spacing: -0.06em;
 
- @include media-desktop {
-        letter-spacing: 0;
-    }
+  @include media-desktop {
+    letter-spacing: 0;
+  }
 
-   &--big {
-          margin-bottom: 5px;
-  letter-spacing: -0.06em;
+  &--big {
+    font-size: calc(90px + (120 - 90) * (100vw - 480px) / 960);
+    margin-bottom: 5px;
+    letter-spacing: -0.06em;
 
     @include media-desktop {
       font-size: 120px;
     }
   }
-
-
 }
 
 .benefit__text {
