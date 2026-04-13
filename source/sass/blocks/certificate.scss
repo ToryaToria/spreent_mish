@@ -42,6 +42,9 @@
   margin-bottom: 19px;
   font-size: 38px;
 
+  transform: translate(0, 70%);
+  animation-duration: 0.7s;
+
   @include media-desktop {
     font-size: 46px;
     line-height: 100%;
@@ -49,8 +52,28 @@
   }
 }
 
+.certificate__title-animation {
+  display: block;
+  opacity: 0;
+  transform: scale(1, 0);
+
+  animation-duration: 0.6s;
+  transform-origin: top;
+}
+
 .certificate__text {
   margin-bottom: 25px;
+
+  opacity: 0;
+  transform: translate(0, 100%);
+  animation-duration: 0.9s;
+}
+
+.certificate__button {
+  opacity: 0;
+  transform: scale(1, 0);
+  animation-duration: 0.9s;
+  transform-origin: bottom left;
 }
 
 .certificate__card {
@@ -61,6 +84,10 @@
   min-width: 448px;
   height: auto;
   overflow: hidden;
+
+  opacity: 0;
+  transform: scale(0, 0);
+  animation-duration: 0.9s;
 
   @include media-tabl {
     width: 720px;

@@ -7,8 +7,15 @@
   }
 }
 
+.price__animation {
+  transform-style: preserve-3d;
+}
+
 .price__title {
   margin-bottom: 30px;
+  opacity: 0;
+  transform: translate(0, 100%);
+  animation-duration: 0.7s;
 
   @include media-desktop {
     margin-bottom: 50px;
