@@ -3,6 +3,20 @@
   padding-top: 60px;
   padding-bottom: 125px;
   margin: 0 auto;
+
+  @include media-desktop {
+    width: $desktop-width;
+    padding-top: 79px;
+    padding-bottom: 78px;
+  }
+}
+
+.work__container {
+  box-sizing: border-box;
+  min-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+
   display: grid;
 
   @include desktop-1024 {
@@ -11,11 +25,6 @@
 
   @include media-desktop {
     display: grid;
-
-    width: $desktop-width;
-
-    padding-top: 79px;
-    padding-bottom: 78px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -27,6 +36,8 @@
 
 .work__content {
   margin-bottom: 60px;
+  padding-left: calc(15px + 25 * (100vw - 480px) / 960);
+  padding-right: calc(15px + 25 * (100vw - 480px) / 960);
 
   @include media-desktop {
     grid-area: content;
@@ -47,7 +58,7 @@
 
 .work__list {
   @include list-reset;
-
+  width: 480px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -63,6 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   border: 1px solid $color-line;
   border-left: 0;
@@ -139,6 +151,8 @@
   display: block;
   width: 100%;
   height: auto;
+    object-fit: contain;
+
 
   @include media-desktop {
     transform: scale(1.5, 1.5);

@@ -5,7 +5,7 @@
 }
 
 .nav__list {
-  @include list-reset($padd-left: 15px);
+  @include list-reset;
 }
 
 .nav__link {

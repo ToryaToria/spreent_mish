@@ -16,18 +16,18 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 26px 22px 27px 15px;
 
   border-radius: 16px;
-  background-image:
-    linear-gradient(
-      90deg,
-      #daeef4 19%,
-      #eef4f6 51%,
-      #ffffff 89%
-    );
+  background-image: linear-gradient(
+    90deg,
+    #daeef4 19%,
+    #eef4f6 51%,
+    #ffffff 89%
+  );
 
   @include media-desktop {
     margin-top: 35px;
@@ -51,6 +51,8 @@
   width: 90px;
   height: 90px;
 
+  background-color: $color-bg-other;
+
   mask-image: url("../../img/mask.svg");
   mask-position: center;
   mask-size: 90px 90px;
@@ -68,7 +70,7 @@
   width: 100%;
   height: auto;
   object-position: 6px -0;
-
+  object-fit: contain;
   @include media-desktop {
     object-position: 9px 0;
   }

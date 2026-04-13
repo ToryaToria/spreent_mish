@@ -1,6 +1,3 @@
-// @use "variables" as var;
-// @use "mixins" as mix;
-
 .btn-menu {
   @include btn-reset;
 
@@ -25,7 +22,9 @@
     background-color: $color-bg-light;
   }
 
-  @include media-desktop {
+  @include media-tabl {
+
+  // @include media-desktop {
     display: none;
   }
 

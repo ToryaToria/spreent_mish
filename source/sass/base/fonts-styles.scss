@@ -104,11 +104,14 @@
 
   text-decoration: none;
 
-  @include media-desktop {
+    @include media-tabl {
+    // font-size: 16px;
+    }
+  // @include media-desktop {
     font-size: 18px;
     line-height: 140%;
   }
-}
+// }
 
 // ++++++++++++++++=
 .text-reverse {
