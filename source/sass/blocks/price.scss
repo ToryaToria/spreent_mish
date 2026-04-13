@@ -24,7 +24,6 @@
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    // padding-right: 19px;
   }
 
   @include media-desktop {
@@ -67,6 +66,7 @@
 
 .price__list {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -91,7 +91,7 @@
     background-color: $color-btn;
     border-radius: 50%;
 
-    background-image: url(../../img/sprite/arrow.svg);
+    background-image: url("../../img/sprite/arrow.svg");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -114,7 +114,6 @@
   border-top: 1px solid $color-line-price;
 
   @include desktop-1280 {
-    border-top: none;
     padding-top: 0;
     flex-direction: column;
     border-top: none;
@@ -123,7 +122,6 @@
   }
 
   @include media-desktop {
-    border-top: none;
     padding-top: 0;
     flex-direction: column;
     border-top: none;
@@ -139,18 +137,19 @@
   flex-direction: column;
   gap: 2px;
 
-  &--old {
-    display: none;
-
-    @include media-tabl {
-      // @include media-desktop {
-      display: inline;
-      color: $color-text-40;
-      text-decoration: line-through;
-    }
-  }
   @include media-desktop {
     margin-bottom: 150px;
+  }
+}
+
+.price__count-old {
+  display: none;
+
+  @include media-tabl {
+    // @include media-desktop {
+    display: inline;
+    color: $color-text-40;
+    text-decoration: line-through;
   }
 }
 

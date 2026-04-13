@@ -13,6 +13,7 @@
     // padding-top: 340px;
     margin-top: -250px;
   }
+
   @include media-desktop {
     // padding-top: 340px;
     margin-top: -250px;
@@ -50,7 +51,6 @@
   padding: 15px 25px;
   border-radius: 100px;
   background-color: $color-white-20;
-  border: 1px solid $color-white-20;
   border: 0;
   height: 55px;
   color: $color-white;

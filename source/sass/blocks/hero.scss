@@ -1,14 +1,10 @@
-// .hero {
-
-// }
-
 .hero__container {
   position: relative;
 
   padding-top: 204px;
   padding-bottom: 340px;
 
-  @media (min-width: 1124px) {
+  @media (width >= 1124px) {
     padding-top: 180px;
     padding-bottom: 250px;
   }
@@ -42,12 +38,11 @@
 
 .hero__indent {
   // margin-left: 42px;
-
   margin-left: calc(42px + (345 - 42) * (100vw - 480px) / 960);
 
   display: block;
+
   @include media-desktop {
-    // margin-top: -5px;
     margin-left: 345px;
   }
 }
@@ -90,37 +85,39 @@
   @include media-desktop {
     margin-top: 31px;
   }
+}
 
-  &--sergey {
-    margin-left: 110px;
-    margin-top: 14px;
+.hero__wrapper-name--sergey {
+  margin-left: 110px;
+  margin-top: 14px;
 
-    &::before {
-      background-image: url("../../img/sprite/cursor-arrow.svg");
-    }
-
-    @include media-desktop {
-      margin-left: 0;
-      margin-top: 0;
-    }
+  &::before {
+    background-image: url("../../img/sprite/cursor-arrow.svg");
   }
 
-  &--misha {
-    margin-bottom: 29px;
-    width: fit-content;
-    margin-left: 14px;
-    &::before {
-      background-image: url("../../img/sprite/cursor-arrow.svg");
-    }
-
-    @include media-desktop {
-      margin-top: 21px;
-      margin-left: 0;
-      margin-bottom: 0;
-      order: 1;
-    }
+  @include media-desktop {
+    margin-left: 0;
+    margin-top: 0;
   }
 }
+
+.hero__wrapper-name--misha {
+  margin-bottom: 29px;
+  width: fit-content;
+  margin-left: 14px;
+
+  &::before {
+    background-image: url("../../img/sprite/cursor-arrow.svg");
+  }
+
+  @include media-desktop {
+    margin-top: 21px;
+    margin-left: 0;
+    margin-bottom: 0;
+    order: 1;
+  }
+}
+
 
 .hero__wrapper-img {
   border-radius: 16px;
@@ -165,7 +162,6 @@
 }
 
 .hero__wrapper-sergey {
-  // left: 15px;
   bottom: 61px;
 
   @include media-desktop {

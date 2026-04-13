@@ -11,13 +11,13 @@
   @include desktop-1024 {
     // @include media-desktop {
     padding: 0;
-   margin: 0 auto;
+    margin: 0 auto;
     background-color: $color-white;
   }
 
-   @include media-desktop {
-width: $desktop-width;
-}
+  @include media-desktop {
+    width: $desktop-width;
+  }
 }
 
 .certificate__container {
@@ -29,15 +29,14 @@ width: $desktop-width;
     justify-content: space-between;
     gap: 20px;
 
- margin-left: 40px;
+    margin-left: 40px;
     margin-right: 40px;
 
     padding: 30px;
     background-color: $color-bg-light;
     border-radius: 32px;
   }
-
-   }
+}
 
 .certificate__title {
   margin-bottom: 19px;

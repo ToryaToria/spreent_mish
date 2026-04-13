@@ -1,9 +1,9 @@
 .title-hero {
-  @include font($family: $font-title-w,
-  // $size: 40px,
- $size: calc(40px + (90 - 40) * (100vw - 480px) / 960),
-
-  $line-height: 98%);
+  @include font(
+    $family: $font-title-w,
+    $size: calc(40px + (90 - 40) * (100vw - 480px) / 960),
+    $line-height: 98%
+  );
 
   letter-spacing: -0.6px;
 
@@ -15,11 +15,12 @@
 }
 
 .title-section {
-  @include font($family: $font-title,
-  // $size: 38px,
- $size: calc(38px + (55 - 38) * (100vw - 480px) / 960),
+  @include font(
+    $family: $font-title,
+    $size: calc(38px + (55 - 38) * (100vw - 480px) / 960),
+    $line-height: 98%
+  );
 
-   $line-height: 98%);
   letter-spacing: 0.05em;
 
   @include media-desktop {
@@ -49,6 +50,7 @@
     $line-height: 140%,
     $color: $color-white
   );
+
   text-decoration: none;
 }
 
@@ -90,12 +92,15 @@
 
 .text-little {
   @include font($size: 14px, $line-height: 130%);
+
   letter-spacing: 0.02em;
 }
 
 .text-nav {
   @include font($family: $font-title-w, $size: 30px, $line-height: 102%);
+
   text-decoration: none;
+
   @include media-desktop {
     font-size: 18px;
     line-height: 140%;

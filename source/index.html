@@ -26,23 +26,23 @@
     <div class="header__container container">
       <img class="header__logo" src="./img/logo.svg" alt="logo" width="127" height="28">
 
-      <nav class="header__nav nav" aria-label="основная навигация сайта">
+      <nav class="header__nav nav header__nav--open" aria-label="основная навигация сайта">
         <ul class="header__list nav__list">
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#about-">Об академии</a>
+            <a class="nav__link text-nav" href="#about">Об академии</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Курсы</a>
+            <a class="nav__link text-nav" href="#price">Курсы</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#">Корпоративное обучение</a>
+            <a class="nav__link text-nav" href="#certificate">Корпоративное обучение</a>
           </li>
         </ul>
       </nav>
 
-      <a class="header__button button button--mini text-button" href="#form" data-text="Начать">
+      <a class="header__button button button--mini text-button" href="#form" data-text="Начать" id="js-button">
         Начать
       </a>
 
@@ -70,7 +70,6 @@
                 width="221" height="135">
             </picture>
           </div>
-
         </div>
 
         <div class="hero__wrapper-content">
@@ -118,16 +117,17 @@
             </picture>
           </div>
         </div>
+      </div>
     </section>
 
     <section class="about" id="about">
       <div class="container">
         <h2 class="about__title title-section">
-          Почему выбирают<br> академию spreent
+          Почему выбирают<br>академию spreent
         </h2>
 
         <ul class="about__list">
-          <li class="about_item about_item--card1">
+          <li class="about__item about__item--card1">
             <div class="about__wrapper">
               <p class="about__tag text-tag text-reverse">Что я получу?</p>
               <h3 class="about__card title-card text-reverse ">Практические навыки</h3>
@@ -140,7 +140,7 @@
               height="602">
           </li>
 
-          <li class="about_item about_item--card2">
+          <li class="about__item about__item--card2">
             <div class="about__wrapper about__wrapper--card2">
               <p class="about__tag about__tag--2 text-tag">Кто будет учить?</p>
               <h3 class="about__card title-card">Опытные преподаватели</h3>
@@ -158,7 +158,7 @@
             </picture>
           </li>
 
-          <li class="about_item about_item--card3">
+          <li class="about__item about__item--card3">
             <div class="about__wrapper">
               <p class="about__tag about__tag--2 text-tag">Что мне дадут?</p>
               <h3 class="about__card title-card">Актуальные знания</h3>
@@ -227,7 +227,7 @@
             </div>
           </li>
 
-          <li class="">
+          <li>
             <a class="community__still" href="#">
               <span class="visually-hidden">Ещё</span>
             </a>
@@ -255,7 +255,7 @@
       </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
         <h2 class="price__title title-section">Стоимость обучения</h2>
 
@@ -311,12 +311,14 @@
             <div class="price__count">
               <span class="price__cost subtitle">Стоимость</span>
               <div class="price__count-wrapper">
-                <span>83 890 ₽</span> <span class="price__count--old">110 388 ₽</span>
+                <span>83 890 ₽</span>
+                <span class="price__count-old">110 388 ₽</span>
               </div>
+
               <p class="text-mini">или</p>
               <div class="price__count-wrapper">
-
-                <span>419&nbsp;000&nbsp;₸</span> <span class="price__count--old">552&nbsp;000&nbsp;₸</span>
+                <span>419&nbsp;000&nbsp;₸</span>
+                <span class="price__count-old">552&nbsp;000&nbsp;₸</span>
               </div>
             </div>
 
@@ -327,7 +329,6 @@
         </div>
       </div>
     </section>
-
 
     <section class="work">
       <div class="work__content container">
@@ -341,8 +342,6 @@
           Присоединиться
         </a>
       </div>
-
-
 
       <ul class="work__list">
         <li class="work__item work__item--w1">
@@ -404,14 +403,15 @@
   </main>
 
   <footer class="footer-all">
-    <section class="certificate">
+    <section class="certificate" id="certificate">
       <div class="certificate__container">
         <div class="certificate__content">
           <h2 class="certificate__title title-section">
             Получи сертификат об успешном завершении курса
           </h2>
           <p class="certificate__text text-base">
-            Обучение ведется на основании лицензии<br> государственного образца
+            Обучение ведется на основании лицензии<br>
+            государственного образца
           </p>
 
           <a class="certificate__button button text-button" href="#form">
@@ -438,9 +438,7 @@
         </h2>
 
         <form class="form__form" action="http://echo.htmlacademy.ru/" autocomplete="off" method="post">
-          <label class="visually-hidden" for="name">
-          </label>
-          <span class="visually-hidden">Имя</span>
+          <label class="visually-hidden" for="name"> Имя </label>
           <div class="form__wrapper">
             <input class="form__field" type="text" name="name" id="name" required placeholder="Имя"
               pattern="[A-Za-zА-Яа-яЁё\s]+$">
@@ -470,8 +468,8 @@
         </form>
 
         <p class="form__text text-little">
-          Нажимая кнопку «Оставить заявку», вы подтверждаете<br> согласие на обработку
-          персональных данных
+          Нажимая кнопку «Оставить заявку», вы подтверждаете<br>
+          согласие на обработку персональных данных
         </p>
       </div>
     </section>
@@ -483,22 +481,22 @@
         <div class="footer__wpapper">
           <img class="footer__logo" src="./img/logo-white.svg" alt="logo" width="267" height="59">
 
-          <nav class="footer__nav nav">
+          <nav class="footer__nav nav" aria-label="меню в футере">
             <ul class="footer__list nav__list">
               <li class="footer__item">
-                <a class="footer__link nav__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="#about">
                   Об академии
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link nav__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="#certificate">
                   Корпоративное обучение
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link nav__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="#price">
                   Оплата
                 </a>
               </li>
@@ -506,19 +504,19 @@
 
             <ul class="footer__list nav__list">
               <li class="footer__item">
-                <a class="footer__link nav__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="#">
                   Личный кабинет
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link nav__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="#">
                   Связаться с нами
                 </a>
               </li>
 
               <li class="footer__item">
-                <a class="footer__link nav__link subtitle" href="">
+                <a class="footer__link nav__link subtitle" href="#">
                   Политика конфиденциальности
                 </a>
               </li>

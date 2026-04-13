@@ -52,12 +52,12 @@
 }
 
 @mixin hover-line($bg-color: currentColor) {
- content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $bg-color;
-    bottom: -5px;
-    left: 0;
-    right: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $bg-color;
+  bottom: -5px;
+  left: 0;
+  right: 0;
 }

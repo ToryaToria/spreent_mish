@@ -5,16 +5,17 @@
 }
 
 .nav__list {
-  @include list-reset;
-
+  @include list-reset($padd-left: 15px);
 }
 
 .nav__link {
   position: relative;
   display: block;
+  width: fit-content;
 
   &::after {
-   @include hover-line;
+    @include hover-line;
+
     right: 0;
     transform: scaleX(0);
     transform-origin: left;
@@ -27,16 +28,14 @@
 }
 
 .nav__link:focus-visible {
-outline:1px solid currentColor;
+  outline: 1px solid currentColor;
   outline-offset: 3px;
 }
-
 
 .nav__link:hover::after {
   transform: scaleX(1);
 }
 
 .nav__link:active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
-

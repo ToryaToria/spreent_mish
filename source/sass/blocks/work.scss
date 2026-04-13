@@ -11,12 +11,6 @@
 
   @include media-desktop {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "content content content"
-      "w1 w2 w3"
-      "w4 w5 w6"
-      "w7 w8 w9";
 
     width: $desktop-width;
 
@@ -26,13 +20,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "content content content w3 w2 w1"
-      "content content content . w8 w9"
-      "w4 w5 w6 w7 . .";
+      "content content content .  w8 w9"
+      "w4      w5      w6      w7 .  .";
   }
 }
 
 .work__content {
   margin-bottom: 60px;
+
   @include media-desktop {
     grid-area: content;
   }
@@ -52,9 +47,8 @@
 
 .work__list {
   @include list-reset;
-  // display: contents;
+
   margin: 0 auto;
-  // width: 480px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
