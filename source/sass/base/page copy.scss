@@ -1,4 +1,4 @@
-// @use "variables" as var;
+@use "variables" as var;
 
 .page {
   /*  для стики-футера */
@@ -9,7 +9,7 @@
 .page__body {
   position: relative;
   margin: 0 auto;
-  min-width: $mobile-width;
+  min-width: var.$mobile-width;
 
   /*  для стики-футера */
   display: flex;

@@ -72,7 +72,7 @@
   transition: all 0.3s;
 
   @include media-desktop {
-    margin-right: 100px;
+    // margin-right: 100px;
     background-color: inherit;
     position: static;
     width: fit-content;

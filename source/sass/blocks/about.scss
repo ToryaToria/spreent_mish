@@ -208,6 +208,10 @@
   }
 }
 
+:root {
+  --rotation: 0deg;
+}
+
 .about__img--rotare {
   transform: rotate(calc(var(--rotation) * 1deg));
   will-change: transform;

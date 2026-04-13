@@ -1,6 +1,6 @@
 // @use '../base/variables' as var;
 
-@mixin font($family: $font-base, $size, $line-height, $weight: 500, $color: $color-text) {
+@mixin font($family: var.$font-base, $size, $line-height, $weight: 500, $color: var.$color-text) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: $family;
@@ -24,31 +24,31 @@
 }
 
 @mixin media-desktop {
-  @media (min-width: $desktop-width) {
+  @media (min-width: var.$desktop-width) {
     @content;
   }
 }
 
 @mixin desktop-1024 {
-  @media (min-width: $desktop-1024) {
+  @media (min-width: var.$desktop-1024) {
     @content;
   }
 }
 
 @mixin desktop-1280 {
-  @media (min-width:$desktop-1280) {
+  @media (min-width:var.$desktop-1280) {
     @content;
   }
 }
 
 @mixin media-tabl {
-  @media (min-width: $tabl-width) {
+  @media (min-width: var.$tabl-width) {
     @content;
   }
 }
 
 @mixin media-mobile {
-  @media (min-width: $mobile-width) {
+  @media (min-width: var.$mobile-width) {
     @content;
   }
 }

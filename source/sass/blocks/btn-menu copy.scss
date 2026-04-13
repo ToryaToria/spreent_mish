@@ -1,5 +1,5 @@
-// @use "variables" as var;
-// @use "mixins" as mix;
+@use "variables" as var;
+@use "mixins" as mix;
 
 .btn-menu {
   @include btn-reset;
@@ -35,7 +35,7 @@
     content: "";
     width: 28px;
     height: 2px;
-    background-color: $color-black;
+    background-color: var.$color-black;
     transition: all 0.3s;
   }
 }

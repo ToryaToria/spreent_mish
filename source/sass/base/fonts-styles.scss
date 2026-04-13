@@ -1,3 +1,6 @@
+// @use "variables" as var; // Импортируем переменные из variables.scss
+// @use "mixins" as mix; // Импортируем миксины из mixins.scss
+
 .title-hero {
   @include font(
     $family: $font-title-w,

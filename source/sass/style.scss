@@ -4,6 +4,11 @@
 @import "vendor/normalize";
 
 // Base ---------------------------------
+// @use 'base/variables' as var; // Присваиваем псевдоним 'var' для удобства
+// @use 'base/mixins' as mix;   // Присваиваем псевдоним 'mix'
+// @use 'base/fonts';           // Здесь псевдоним будет 'fonts'
+// @use 'base/fonts-styles';
+
 
 @import "./base/variables";
 @import "./base/mixins";
@@ -14,17 +19,17 @@
 @import "./base/container";
 
 // Blocks ---------------------------------
-@import "./blocks/animation.scss";
-@import "./blocks/header.scss";
-@import "./blocks/nav.scss";
-@import "./blocks/button.scss";
-@import "./blocks/btn-menu.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/about.scss";
-@import "./blocks/community.scss";
-@import "./blocks/benefit.scss";
-@import "./blocks/price.scss";
-@import "./blocks/work.scss";
-@import "./blocks/certificate.scss";
-@import "./blocks/form.scss";
-@import "./blocks/footer.scss";
+@import "./blocks/animation";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/button";
+@import "./blocks/btn-menu";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/community";
+@import "./blocks/benefit";
+@import "./blocks/price";
+@import "./blocks/work";
+@import "./blocks/certificate";
+@import "./blocks/form";
+@import "./blocks/footer";
