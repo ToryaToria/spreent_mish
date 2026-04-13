@@ -4,7 +4,6 @@
   width: var.$mobile-width;
   margin: 0 auto;
 
-
   @include media-desktop {
     width: $desktop-width;
   }

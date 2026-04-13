@@ -10,12 +10,10 @@
   }
 
   @include desktop-1024 {
-    // padding-top: 340px;
     margin-top: -250px;
   }
 
   @include media-desktop {
-    // padding-top: 340px;
     margin-top: -250px;
   }
 }

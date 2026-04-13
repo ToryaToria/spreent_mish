@@ -6,10 +6,9 @@ const certificateText = document.querySelector('.certificate__text');
 const certificateTitle = document.querySelector('.certificate__title');
 const certificateTitleAnim = document.querySelector('.certificate__title-animation');
 
-
 function observeAnimatedElem() {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         certificateImg.classList.add('animation');
         certificateButton.classList.add('animation');
@@ -23,10 +22,8 @@ function observeAnimatedElem() {
         certificateText.classList.remove('animation');
         certificateTitle.classList.remove('animation');
         certificateTitleAnim.classList.remove('animation');
-
-
       }
-    })
+    });
   });
 
   observer.observe(tracked);

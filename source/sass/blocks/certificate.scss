@@ -9,7 +9,6 @@
   padding-bottom: 30px;
 
   @include desktop-1024 {
-    // @include media-desktop {
     padding: 0;
     margin: 0 auto;
     background-color: $color-white;
@@ -22,8 +21,6 @@
 
 .certificate__container {
   @include desktop-1024 {
-    // @include media-desktop {
-
     position: relative;
     display: flex;
     justify-content: space-between;

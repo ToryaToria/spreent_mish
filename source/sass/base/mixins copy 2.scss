@@ -36,7 +36,7 @@
 }
 
 @mixin desktop-1280 {
-  @media (min-width:var.$desktop-1280) {
+  @media (min-width: var.$desktop-1280) {
     @content;
   }
 }

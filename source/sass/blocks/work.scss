@@ -58,6 +58,7 @@
 
 .work__list {
   @include list-reset;
+
   width: 480px;
   margin: 0 auto;
   display: grid;
@@ -151,7 +152,7 @@
   display: block;
   width: 100%;
   height: auto;
-    object-fit: contain;
+  object-fit: contain;
 
 
   @include media-desktop {

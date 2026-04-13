@@ -100,7 +100,7 @@
 
     background-image: url("../../img/sprite/arrow.svg");
     background-position: center;
-    background-size: auto;
+    background-size: 10.5px 8px;
     background-repeat: no-repeat;
   }
 }
@@ -153,7 +153,6 @@
   display: none;
 
   @include media-tabl {
-    // @include media-desktop {
     display: inline;
     color: $color-text-40;
     text-decoration: line-through;

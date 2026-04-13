@@ -13,7 +13,7 @@ const animate = () => {
   }
 
   requestAnimationFrame(animate);
-}
+};
 
 animate();
 

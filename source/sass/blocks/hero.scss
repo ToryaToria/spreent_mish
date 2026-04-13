@@ -4,7 +4,7 @@
   padding-top: 204px;
   padding-bottom: 340px;
 
-  @media (width >= 1124px) {
+  @include desktop-1024 {
     padding-top: 180px;
     padding-bottom: 250px;
   }
@@ -37,7 +37,6 @@
 }
 
 .hero__indent {
-  // margin-left: 42px;
   margin-left: calc(42px + (345 - 42) * (100vw - 480px) / 960);
 
   display: block;
@@ -121,12 +120,10 @@
   }
 }
 
-
 .hero__wrapper-img {
   border-radius: 16px;
   overflow: hidden;
 
-  // width: 221px;
   width: calc(221px + (329 - 221) * (100vw - 480px) / 960);
   height: auto;
 
@@ -137,9 +134,6 @@
   }
 
   &--sergey {
-    // width: 117px;
-    // height: 171px;
-
     width: calc(117px + (175 - 117) * (100vw - 480px) / 960);
 
     @include media-desktop {
@@ -155,8 +149,7 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-    background-color: $color-bg-other;
-
+  background-color: $color-bg-other;
 }
 
 .hero__wrapper-sergey,

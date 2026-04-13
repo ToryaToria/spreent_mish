@@ -22,12 +22,13 @@
   padding: 26px 22px 27px 15px;
 
   border-radius: 16px;
-  background-image: linear-gradient(
-    90deg,
-    #daeef4 19%,
-    #eef4f6 51%,
-    #ffffff 89%
-  );
+  background-image:
+    linear-gradient(
+      90deg,
+      #daeef4 19%,
+      #eef4f6 51%,
+      #ffffff 89%
+    );
 
   @include media-desktop {
     margin-top: 35px;
@@ -71,6 +72,7 @@
   height: auto;
   object-position: 6px -0;
   object-fit: contain;
+
   @include media-desktop {
     object-position: 9px 0;
   }
