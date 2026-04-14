@@ -4,8 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "vite --host --open",
+    "dev": "vite --host --open",
     "build": "vite build --emptyOutDir",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview --open",
     "convert-rastr": "node convert-rastr.js",
     "w3c": "html-validator source --quiet",
