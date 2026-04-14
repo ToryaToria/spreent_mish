@@ -44,7 +44,7 @@
 .price__card-title {
   @include font($family: $font-title-w, $size: 30px, $line-height: 102%);
 
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @include media-desktop {
     margin-bottom: auto;

@@ -3,13 +3,6 @@
 
 @import "vendor/normalize";
 
-// Base ---------------------------------
-// @use 'base/variables' as var; // Присваиваем псевдоним 'var' для удобства
-// @use 'base/mixins' as mix;   // Присваиваем псевдоним 'mix'
-// @use 'base/fonts';           // Здесь псевдоним будет 'fonts'
-// @use 'base/fonts-styles';
-
-
 @import "./base/variables";
 @import "./base/mixins";
 @import "./base/fonts";

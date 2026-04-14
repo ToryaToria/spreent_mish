@@ -157,6 +157,15 @@
   margin-bottom: 15px;
 }
 
+:root {
+  --rotation: 0deg;
+}
+
+.about__img--rotare {
+  transform: rotate(calc(var(--rotation) * 1deg));
+  will-change: transform;
+}
+
 .about__img {
   position: absolute;
 
@@ -204,15 +213,8 @@
       bottom: 19px;
       right: -108px;
       transform: scale(1.26);
-    }
+         }
   }
 }
 
-:root {
-  --rotation: 0deg;
-}
 
-.about__img--rotare {
-  transform: rotate(calc(var(--rotation) * 1deg));
-  will-change: transform;
-}

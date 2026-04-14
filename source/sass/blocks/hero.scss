@@ -24,7 +24,7 @@
 }
 
 .hero__subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @include media-desktop {
     margin-bottom: 37px;
@@ -71,6 +71,7 @@
   padding: 2px 8px;
   background-color: $color-btn;
   margin-left: 26px;
+  margin-top: -6px;
 }
 
 .hero__wrapper-name {
@@ -94,6 +95,8 @@
   margin-top: 14px;
 
   &::before {
+    width: 32px;
+    height: 32px;
     background-image: url("../../img/sprite/cursor-arrow.svg");
   }
 
@@ -104,11 +107,13 @@
 }
 
 .hero__wrapper-name--misha {
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   width: fit-content;
-  margin-left: 14px;
+  margin-left: 12px;
 
   &::before {
+    width: 32px;
+    height: 32px;
     background-image: url("../../img/sprite/cursor-arrow.svg");
   }
 
@@ -160,7 +165,7 @@
 }
 
 .hero__wrapper-sergey {
-  bottom: 61px;
+  bottom: 60px;
 
   @include media-desktop {
     left: 94px;
