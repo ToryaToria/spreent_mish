@@ -1,0 +1,152 @@
+.community {
+  margin-top: 60px;
+  padding-bottom: 117px;
+  border-top: 1px solid $color-line;
+
+  @include media-desktop {
+    padding-top: 0;
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.community__students {
+  @include list-reset;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 26px 22px 27px 15px;
+
+  border-radius: 16px;
+  background-image:
+    linear-gradient(
+      90deg,
+      #daeef4 19%,
+      #eef4f6 51%,
+      #ffffff 89%
+    );
+
+  @include media-desktop {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    border-radius: 32px;
+    padding: 20px 10px 20px 0;
+  }
+}
+
+.community__student:not(:first-child) {
+  margin-left: -32px;
+
+  @include media-desktop {
+    margin-left: -40px;
+  }
+}
+
+.community__wrapper-img {
+  box-sizing: border-box;
+
+  width: 90px;
+  height: 90px;
+
+  background-color: $color-bg-other;
+
+  mask-image: url("../../img/mask.svg");
+  mask-position: center;
+  mask-size: 90px 90px;
+  mask-repeat: no-repeat;
+
+  @include media-desktop {
+    width: 120px;
+    height: 120px;
+    mask-size: 120px 120px;
+  }
+}
+
+.community__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-position: 6px -0;
+  object-fit: contain;
+
+  @include media-desktop {
+    object-position: 9px 0;
+  }
+}
+
+.community__still {
+  box-sizing: border-box;
+  border-radius: 144px;
+  width: 90px;
+  height: 90px;
+  margin-left: -27px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $color-white;
+  border: 2px solid $color-btn;
+
+  &::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-image: url("../../img/sprite/pluse.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: transform 0.4s ease-out;
+  }
+
+  @include media-desktop {
+    width: 120px;
+    height: 120px;
+    margin-left: -30px;
+  }
+}
+
+.community__still:focus {
+  outline: none;
+}
+
+.community__still:focus-visible {
+  outline: 1px solid $color-btn;
+  outline-offset: 3px;
+}
+
+.community__still:hover::before {
+  transform: rotate(90deg);
+}
+
+.community__still:active {
+  background-color: $color-bg-light;
+}
+
+.community__benefits {
+  @include list-reset;
+
+  display: grid;
+  gap: 30px;
+
+  @include media-tabl {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "big  big"
+      "none none";
+  }
+
+  @include desktop-1024 {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "big none"
+      "big none";
+    gap: 34px 30px;
+    align-items: start;
+  }
+}

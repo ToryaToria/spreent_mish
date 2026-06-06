@@ -1,0 +1,125 @@
+.form {
+  padding-top: 210px;
+  padding-bottom: 90px;
+  background-color: $color-text;
+  margin-top: -150px;
+
+  @include media-tabl {
+    padding-top: 340px;
+    margin-top: -300px;
+  }
+
+  @include desktop-1024 {
+    margin-top: -250px;
+  }
+
+  @include media-desktop {
+    margin-top: -250px;
+  }
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+
+  @include desktop-1024 {
+    flex-direction: row;
+    gap: 20px 5px;
+    flex-wrap: wrap;
+  }
+
+  @include media-desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+}
+
+.form__title {
+  color: $color-white;
+  margin-bottom: 40px;
+}
+
+.form__field {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 15px 25px;
+  border-radius: 100px;
+  background-color: $color-white-20;
+  border: 0;
+  height: 55px;
+  color: $color-white;
+
+  &::placeholder {
+    color: $color-white-50;
+  }
+
+  @include media-desktop {
+    width: 378px;
+  }
+}
+
+.form__field:not(:disabled):focus {
+  outline: none;
+}
+
+.form__field:not(:disabled):focus-visible {
+  outline: 1px solid $color-white-50;
+  outline-offset: 3px;
+  color: $color-text;
+}
+
+.form__field:not(:disabled):hover,
+.form__field:not(:disabled):active {
+  background-color: $color-white-70;
+  border: 1px solid $color-white;
+}
+
+.form__field:disabled {
+  background-color: $color-disabled;
+}
+
+.form__field:not(:placeholder-shown):invalid {
+  border: 1px solid $color-error;
+}
+
+.form__field:not(:placeholder-shown):invalid + .form__err {
+  display: block;
+}
+
+.form__wrapper {
+  position: relative;
+
+  @include desktop-1024 {
+    flex-grow: 1;
+  }
+}
+
+.form__err {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  left: 20px;
+
+  color: $color-error;
+}
+
+.form__button {
+  margin-top: 5px;
+
+  @include desktop-1024 {
+    margin-left: auto;
+  }
+
+  @include media-desktop {
+    margin-top: 0;
+    min-height: 55px;
+  }
+}
+
+.form__text {
+  color: $color-white-50;
+}

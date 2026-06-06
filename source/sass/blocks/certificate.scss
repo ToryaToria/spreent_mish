@@ -1,0 +1,130 @@
+.certificate {
+  padding-top: 30px;
+  background-color: $color-bg-light;
+
+  margin: 0 auto;
+  padding-left: calc(15px + (40 - 15) * (100vw - 480px) / 960);
+  padding-right: calc(15px + (40 - 15) * (100vw - 480px) / 960);
+
+  padding-bottom: 30px;
+
+  @include desktop-1024 {
+    padding: 0;
+    margin: 0 auto;
+    background-color: $color-white;
+  }
+
+  @include media-desktop {
+    width: $desktop-width;
+  }
+}
+
+.certificate__container {
+  @include desktop-1024 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    padding: 30px;
+    background-color: $color-bg-light;
+    border-radius: 32px;
+  }
+}
+
+.certificate__title {
+  margin-bottom: 19px;
+  font-size: 38px;
+
+  transform: translate(0, 70%);
+  animation-duration: 0.7s;
+
+  @include media-desktop {
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+  }
+}
+
+.certificate__title-animation {
+  display: block;
+  opacity: 0;
+  transform: scale(1, 0);
+
+  animation-duration: 0.6s;
+  transform-origin: top;
+}
+
+.certificate__text {
+  margin-bottom: 25px;
+
+  opacity: 0;
+  transform: translate(0, 100%);
+  animation-duration: 0.9s;
+}
+
+.certificate__button {
+  opacity: 0;
+  transform: scale(1, 0);
+  animation-duration: 0.9s;
+  transform-origin: bottom left;
+}
+
+.certificate__card {
+  position: relative;
+
+  background-color: $color-white;
+  border-radius: 16px;
+  min-width: 448px;
+  height: auto;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: scale(0, 0);
+  animation-duration: 0.9s;
+
+  @include media-tabl {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  @include desktop-1024 {
+    margin: 0;
+  }
+
+  @include media-desktop {
+    width: 660px;
+    height: 440px;
+  }
+}
+
+.certificate__content {
+  margin-bottom: 55px;
+  max-width: 460px;
+
+  @include media-tabl {
+    max-width: 500px;
+  }
+
+  @include media-desktop {
+    max-width: 500px;
+  }
+}
+
+.certificate__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  min-width: 448px;
+  min-height: 300px;
+
+  @include media-desktop {
+    width: 660px;
+    height: 440px;
+  }
+}

@@ -1,0 +1,63 @@
+@mixin font($family: $font-base, $size, $line-height, $weight: 500, $color: $color-text) {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $family;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin list-reset($padd-left: 0) {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: $padd-left;
+  list-style: none;
+}
+
+@mixin btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@mixin media-desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin desktop-1024 {
+  @media (min-width: $desktop-1024) {
+    @content;
+  }
+}
+
+@mixin desktop-1280 {
+  @media (min-width: $desktop-1280) {
+    @content;
+  }
+}
+
+@mixin media-tabl {
+  @media (min-width: $tabl-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin hover-line($bg-color: currentColor) {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $bg-color;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+}

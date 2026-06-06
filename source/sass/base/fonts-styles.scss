@@ -1,0 +1,104 @@
+.title-hero {
+  @include font(
+    $family: $font-title-w,
+    $size: calc(40px + (90 - 40) * (100vw - 480px) / 960),
+    $line-height: 98%
+  );
+
+  letter-spacing: -0.6px;
+
+  @include media-desktop {
+    font-size: 90px;
+    line-height: 88px;
+    letter-spacing: 0;
+  }
+}
+
+.title-section {
+  @include font(
+    $family: $font-title,
+    $size: calc(38px + (55 - 38) * (100vw - 480px) / 960),
+    $line-height: 98%
+  );
+
+  letter-spacing: 0.05em;
+
+  @include media-desktop {
+    font-size: 55px;
+    line-height: 96%;
+  }
+}
+
+.text-base {
+  @include font($size: 18px, $line-height: 140%);
+
+  &--big {
+    @include media-desktop {
+      font-size: 24px;
+    }
+  }
+}
+
+.subtitle {
+  @include font($family: $font-title-w, $size: 18px, $line-height: 140%);
+}
+
+.text-button {
+  @include font(
+    $family: $font-title-w,
+    $size: 18px,
+    $line-height: 140%,
+    $color: $color-white
+  );
+
+  text-decoration: none;
+}
+
+.text-name {
+  @include font(
+    $family: $font-other,
+    $size: 16px,
+    $line-height: 24px,
+    $color: $color-white
+  );
+}
+
+.title-card {
+  @include font($family: $font-title-w, $size: 30px, $line-height: 102%);
+
+  @include media-desktop {
+    font-size: 34px;
+  }
+}
+
+.text-tag {
+  @include font($size: 14px, $line-height: 130%, $weight: 600);
+
+  letter-spacing: 0.01em;
+}
+
+.text-mini {
+  @include font($size: 16px, $line-height: 140%);
+}
+
+.text-little {
+  @include font($size: 14px, $line-height: 130%);
+
+  letter-spacing: 0.02em;
+}
+
+.text-nav {
+  @include font($family: $font-title-w, $size: 30px, $line-height: 102%);
+
+  text-decoration: none;
+
+  @include media-tabl {
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+
+// ++++++++++++++++=
+.text-reverse {
+  color: $color-white;
+}

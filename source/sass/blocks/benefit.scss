@@ -1,0 +1,35 @@
+.benefit--big {
+  @include media-tabl {
+    grid-area: big;
+  }
+
+  @include media-desktop {
+    grid-area: big;
+    margin-top: 18px;
+  }
+}
+
+.benefit__title {
+  @include font($family: $font-title-w, $size: 90px, $line-height: 100%);
+
+  margin-bottom: 9px;
+  letter-spacing: -0.06em;
+
+  @include media-desktop {
+    letter-spacing: 0;
+  }
+
+  &--big {
+    font-size: calc(90px + (120 - 90) * (100vw - 480px) / 960);
+    margin-bottom: 5px;
+    letter-spacing: -0.06em;
+
+    @include media-desktop {
+      font-size: 120px;
+    }
+  }
+}
+
+.benefit__text {
+  @include font($size: 18px, $line-height: 140%, $color: $color-text-70);
+}

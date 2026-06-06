@@ -1,0 +1,11 @@
+@keyframes animation {
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+    view-timeline-name: --target-timeline;
+  }
+}
+
+.animation {
+  animation: animation 2s ease-in-out forwards 0s;
+}

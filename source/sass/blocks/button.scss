@@ -1,0 +1,49 @@
+.button {
+  @include btn-reset;
+
+  box-sizing: border-box;
+  display: block;
+  padding: 13px 25px 15px;
+  background-color: $color-btn;
+  border-radius: 136px;
+
+  width: fit-content;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
+
+  &--mini {
+    padding: 5px 15px 6px;
+  }
+
+  &--form {
+    background-color: $color-accent;
+    color: $color-text;
+  }
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid $color-btn;
+  outline-offset: 3px;
+}
+
+.button--form:focus-visible {
+  outline: 1px solid $color-accent;
+}
+
+.button:hover {
+  background-color: $color-bg-card;
+}
+
+.button--form:hover {
+  color: $color-white;
+}
+
+.button:active {
+  color: $color-white-50;
+}

@@ -1,0 +1,10 @@
+.footer-all {
+  background-color: $color-white;
+
+  width: var.$mobile-width;
+  margin: 0 auto;
+
+  @include media-desktop {
+    width: $desktop-width;
+  }
+}

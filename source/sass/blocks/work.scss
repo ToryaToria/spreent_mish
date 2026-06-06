@@ -1,0 +1,161 @@
+.work {
+  min-width: $mobile-width;
+  padding-top: 60px;
+  padding-bottom: 125px;
+  margin: 0 auto;
+
+  @include media-desktop {
+    width: $desktop-width;
+    padding-top: 79px;
+    padding-bottom: 78px;
+  }
+}
+
+.work__container {
+  box-sizing: border-box;
+  min-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+
+  @include desktop-1024 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-desktop {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "content content content w3 w2 w1"
+      "content content content .  w8 w9"
+      "w4      w5      w6      w7 .  .";
+  }
+}
+
+.work__content {
+  margin-bottom: 60px;
+  padding-left: calc(15px + 25 * (100vw - 480px) / 960);
+  padding-right: calc(15px + 25 * (100vw - 480px) / 960);
+
+  @include media-desktop {
+    grid-area: content;
+  }
+}
+
+.work__title {
+  margin-bottom: 20px;
+}
+
+.work__text {
+  margin-bottom: 25px;
+
+  @include media-desktop {
+    margin-bottom: 35px;
+  }
+}
+
+.work__list {
+  @include list-reset;
+
+  width: 480px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @include media-desktop {
+    width: 1440px;
+    display: contents;
+  }
+}
+
+.work__item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  border: 1px solid $color-line;
+  border-left: 0;
+  width: 160px;
+  height: 160px;
+
+  &--w3 {
+    border-right: 0;
+  }
+
+  &--w4,
+  &--w5,
+  &--w7,
+  &--w8 {
+    border-top: 0;
+  }
+
+  &--w6,
+  &--w9 {
+    border-right: 0;
+    border-top: 0;
+  }
+
+  @include media-desktop {
+    width: 240px;
+    height: 240px;
+    border-left: 1px solid $color-line;
+    border-right: 0;
+
+    &--w1 {
+      grid-area: w1;
+    }
+
+    &--w2 {
+      grid-area: w2;
+    }
+
+    &--w3 {
+      grid-area: w3;
+    }
+
+    &--w4 {
+      grid-area: w4;
+      border-top: $color-line;
+    }
+
+    &--w5 {
+      grid-area: w5;
+      border-top: 1px solid $color-line;
+    }
+
+    &--w6 {
+      grid-area: w6;
+      border-top: 1px solid $color-line;
+    }
+
+    &--w7 {
+      grid-area: w7;
+      border-top: 1px solid $color-line;
+      border-right: 1px solid $color-line;
+    }
+
+    &--w8 {
+      grid-area: w8;
+    }
+
+    &--w9 {
+      grid-area: w9;
+    }
+  }
+}
+
+.work__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+
+  @include media-desktop {
+    transform: scale(1.5, 1.5);
+  }
+}
