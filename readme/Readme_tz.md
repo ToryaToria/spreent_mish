@@ -1,7 +1,5 @@
 # Техническое задание
 
-- [Mакет](https://www.figma.com/design/96x2GOEqjf9QvN1VgtR36q/Mish-x-HTML-Academy--Final-?node-id=0-1&t=7zRKV103heMy7hfe-1)
--
 - [готовая сборка](https://github.com/htmlacademy/accelerator-project-3) - с моими изменениямми для node22
 
 - [Обязательные требования по подготовке к защите проекта](https://htmlacademy.notion.site/ed59b1e3e63c40f994772db37500d0f9#ea35a566b0034abf8ccb1887b6fddfeb)
